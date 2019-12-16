@@ -338,7 +338,11 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
+module.exports = __webpack_require__(/*! /Users/lynneasmoyer/Documents/GitHub/adventures_mr_fox/public/src/styles.css */"./src/styles.css");
+=======
 module.exports = __webpack_require__(/*! /Users/nadiaouzounova/coding_dojo/git_hub/adventures_mr_fox-1/public/src/styles.css */"./src/styles.css");
+>>>>>>> bd40e5cd5e44b2bdcb8460b08e67dbb788741f64
 
 
 /***/ })

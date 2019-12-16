@@ -483,7 +483,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/rebeccadiaz/Desktop/Becky 2019 Student/python_stack/Git-Local/adventures_mr_fox/adventures_mr_fox/public/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/nadiaouzounova/coding_dojo/git_hub/adventures_mr_fox-1/public/src/main.ts */"./src/main.ts");
 
 
 /***/ })

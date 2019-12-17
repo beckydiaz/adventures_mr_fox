@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AsyncHook } from 'async_hooks';
+
 
 var world = [
   [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
@@ -44,12 +44,38 @@ class Character {
   }
   eatTreat() {
     this.health += 5;
-    console.log(`${this.name} loves treats!`);
+  }
+  drinksPupaccino() {
+    this.health += 5;
+  }
+  visitSpa() {
+    this.health += 10;
   }
   eatChocolate() {
     this.health -= 5;
-    console.log(`${this.name} loves chocolate, but it's not good for him!`);
   }
+  seesRainstorm() {
+    this.health -= 10;
+  }
+  seesLake() {
+    this.health -= 5;
+  }
+  seesDogFriend() {
+    this.health += 5;
+  }
+  seesMrNibbles() {
+    this.health += 5;
+  }
+  seesAnne() {
+    this.health += 5;
+  }
+  seesAdrien() {
+    this.health -= 5;
+  }
+  seesRyan() {
+    this.health -= 5;
+  }
+
 }
 
 var MrFox = new Character('Mr. Fox', 50, 1, 1)
@@ -58,9 +84,9 @@ var MrFox = new Character('Mr. Fox', 50, 1, 1)
 var health = 50;
 
 
-function displayMrFox(){
-  document.getElementById('MrFox').style.top = MrFox.y*85+"px";
-  document.getElementById('MrFox').style.left = MrFox.x*210+"px";
+function displayMrFox() {
+  document.getElementById('MrFox').style.top = MrFox.y * 640 + "px";
+  document.getElementById('MrFox').style.left = MrFox.x * 1220 + "px";
   return MrFox;
 }
 
@@ -92,9 +118,9 @@ export class GridComponent implements OnInit {
     this.moveleft();
     this.moveright();
   }
-  displayMrFox(){
-    document.getElementById('MrFox').style.top = MrFox.y*85+"px";
-    document.getElementById('MrFox').style.left = MrFox.x*210+"px";
+  displayMrFox() {
+    document.getElementById('MrFox').style.top = MrFox.y * 640 + "px";
+    document.getElementById('MrFox').style.left = MrFox.x * 1220 + "px";
     return MrFox;
   }
   displayWorld() {
@@ -114,28 +140,28 @@ export class GridComponent implements OnInit {
     console.log(output);
     return output;
   }
-  
+
   moveup() {
     console.log('message')
-    MrFox.y -= .5;
+    MrFox.y -= .1;
     displayMrFox();
   }
-  
+
   movedown() {
-    MrFox.y += .5;
+    MrFox.y += .1;
     displayMrFox();
   }
-  
+
   moveleft() {
-    MrFox.x -= .25;
+    MrFox.x -= .1;
     displayMrFox();
   }
-  
+
   moveright() {
-    MrFox.x += .25;
+    MrFox.x += .1;
     displayMrFox();
   }
-  
+
   displayHealth() {
     return health;
   }

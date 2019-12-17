@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./story5.component.css']
 })
 export class Story5Component implements OnInit {
-
+showId
   constructor() { }
 
   ngOnInit() {
+  }
+
+  closeShow(){
+    this.showId = null;
   }
 
 }

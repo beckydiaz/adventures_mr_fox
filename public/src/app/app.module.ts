@@ -11,7 +11,6 @@ import { PlayerComponent } from './player/player.component';
 import { Story1Component } from './story1/story1.component';
 import { Story2Component } from './story2/story2.component';
 import { Story3Component } from './story3/story3.component';
-import { Stroy4Component } from './stroy4/stroy4.component';
 import { Story4Component } from './story4/story4.component';
 import { Story5Component } from './story5/story5.component';
 import { Story6Component } from './story6/story6.component';
@@ -29,7 +28,6 @@ import { Story10Component } from './story10/story10.component';
     Story1Component,
     Story2Component,
     Story3Component,
-    Stroy4Component,
     Story4Component,
     Story5Component,
     Story6Component,

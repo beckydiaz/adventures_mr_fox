@@ -1,0 +1,62 @@
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+:host ::ng-deep #container {
+    border: grey;
+    border-radius: 5px;
+}
+
+:host ::ng-deep body {
+    border: grey;
+    border-radius: 5px;
+    background-color: grey;
+    margin: 0px;
+}
+
+:host ::ng-deep .row {
+    height: 30px;
+}
+
+:host ::ng-deep .row div {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+:host ::ng-deep div.brick {
+    background-color: grey;
+}
+
+:host ::ng-deep div.empty {
+    background-color: white;
+}
+
+:host ::ng-deep #health {
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: 3%;
+    height: 5%;
+    color: red;
+    padding: 8px;
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    top: 80px;
+    margin-left: 100px;
+}
+
+:host ::ng-deep #MrFox {
+    background-image: url('../../assets/images/shiba2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+
+:host ::ng-deep button {
+    font-size: 24px;
+}

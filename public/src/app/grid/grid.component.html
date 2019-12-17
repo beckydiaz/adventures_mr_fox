@@ -1,1 +1,13 @@
-<p>grid works!</p>
+<h1>Adventures of Mr. Fox</h1>
+
+<div id='container'>
+    <div [innerHTML]="stuff" id='world'></div>
+    <div id='MrFox'></div>
+    <div [innerHTML]="health" id='health'>50</div>
+    <br>
+    <button (click)="moveup()">UP</button>
+    <button (click)="movedown()">DOWN</button><br>
+    <button (click)="moveleft()">LEFT</button>
+    <button (click)="moveright()">RIGHT</button>
+
+</div>

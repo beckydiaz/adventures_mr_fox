@@ -86,8 +86,8 @@ var health = 50;
 
 
 function displayMrFox() {
-  document.getElementById('MrFox').style.top = MrFox.y * 640 + "px";
-  document.getElementById('MrFox').style.left = MrFox.x * 1220 + "px";
+  document.getElementById('MrFox').style.top = MrFox.y * 610 + "px";
+  document.getElementById('MrFox').style.left = MrFox.x * 1145 + "px";
   return MrFox;
 }
 
@@ -121,8 +121,8 @@ export class GridComponent implements OnInit {
   }
   
   displayMrFox() {
-    document.getElementById('MrFox').style.top = MrFox.y * 640 + "px";
-    document.getElementById('MrFox').style.left = MrFox.x * 1220 + "px";
+    document.getElementById('MrFox').style.top = MrFox.y * 610 + "px";
+    document.getElementById('MrFox').style.left = MrFox.x * 1145 + "px";
     return MrFox;
   }
   
@@ -152,23 +152,23 @@ export class GridComponent implements OnInit {
 
   moveup() {
     console.log('message')
-    MrFox.y -= .1;
+    MrFox.y -= .05;
     displayMrFox();
   }
 
   movedown() {
-    MrFox.y += .1;
+    MrFox.y += .05;
     displayMrFox();
   }
 
   moveleft() {
-    MrFox.x -= .1;
+    MrFox.x -= .05;
     displayMrFox();
     
   }
 
   moveright() {
-    MrFox.x += .1;
+    MrFox.x += .05;
     displayMrFox();
   }
 

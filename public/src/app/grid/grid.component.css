@@ -136,6 +136,16 @@
     position: absolute;
 }
 
+:host ::ng-deep div.coffee {
+    background-image: url('../../assets/images/starbuckscoffee.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
 :host ::ng-deep #health {
     border: 3px solid grey;
     border-radius: 5px;
@@ -155,11 +165,21 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 42px;
-    height: 42px;
+    width: 45px;
+    height: 45px;
     position: absolute;
 }
 
 :host ::ng-deep button {
     font-size: 24px;
+}
+
+:host ::ng-deep #Cat {
+    background-image: url('../../assets/images/cat.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    position: absolute;
 }

@@ -20,7 +20,7 @@ var world = [
   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2],
   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
   [1, 2, 2, 11, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2],
-  [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [1, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
   [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
 ];
 
@@ -79,10 +79,7 @@ class Character {
 
 }
 
-var MrFox = new Character('Mr. Fox', 50, 2, 2)
-
-
-var health = MrFox.health;
+var MrFox = new Character('Mr. Fox', 50, 1, 1)
 
 
 function displayMrFox() {
@@ -90,6 +87,9 @@ function displayMrFox() {
   document.getElementById('MrFox').style.left = MrFox.x * 85 + "px";
   return MrFox;
 }
+
+var Cat = 'Cat'
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -101,8 +101,9 @@ function displayMrFox() {
 })
 export class GridComponent implements OnInit {
   stuff: any;
-  health: any;
   MrFox: any;
+  Cat: any;
+  Spa: any;
   // moveup: any;
   // movedown: any;
   // moveleft: any;
@@ -112,12 +113,12 @@ export class GridComponent implements OnInit {
 
   ngOnInit() {
     this.stuff = this.displayWorld();
-    this.health = this.displayHealth();
     this.MrFox = this.displayMrFox();
-    this.moveup();
-    this.movedown();
-    this.moveleft();
-    this.moveright();
+    this.Cat = this.displayCat();
+    this.Spa = {
+      x: 12,
+      y: 3
+    }
   }
   
   displayMrFox() {
@@ -126,6 +127,14 @@ export class GridComponent implements OnInit {
     return MrFox;
   }
   
+  displayCat() {
+    document.getElementById('Cat').style.top = Cat.y * 90 + "px";
+    document.getElementById('Cat').style.left = Cat.x * 90 + "px";
+		return Cat;
+	}
+
+
+
   displayWorld() {
     var output = '';
     for (var i = 0; i < world.length; i++) {
@@ -155,6 +164,8 @@ export class GridComponent implements OnInit {
           output += "<div class='meat'></div>"; 
         if (world[i][j] == 11)
           output += "<div class='building'></div>"; 
+        if (world[i][j] == 12)
+          output += "<div class='coffee'></div>"; 
       }
       output += "</div>";
     }
@@ -162,46 +173,42 @@ export class GridComponent implements OnInit {
     return output;
   }
 
-  moveup() {
-    console.log(MrFox.x, MrFox.y)
-  
-      MrFox.y --;
+
+  moveMrFox(direction){
+    switch(direction){
+      case 'up':
+          MrFox.y --;
+          if(MrFox.x == this.Spa.x && MrFox.y == this.Spa.y){
+            MrFox.health+= 10;
+          }
+        break;
+      case 'down':
+        MrFox.y ++;
+        if(MrFox.x == this.Spa.x && MrFox.y == this.Spa.y){
+          MrFox.health+= 10;
+        }
+        break;
+      case 'left':
+        MrFox.x --;
+        if(MrFox.x == this.Spa.x && MrFox.y == this.Spa.y){
+          MrFox.health+= 10;
+        }
+        break;
+      case 'right':
+        MrFox.x ++;
+        if(MrFox.x == this.Spa.x && MrFox.y == this.Spa.y){
+          MrFox.health+= 10;
+        }
+        break;
+    }
+    this.displayWorld();
     displayMrFox();
-
-  }
-
-  movedown() {
-    console.log(MrFox.x, MrFox.y)
-
-    MrFox.y ++;
-    displayMrFox();
-  
-  }
-
-  moveleft() {
-    console.log(MrFox.x, MrFox.y)
-
-    MrFox.x --;
-    displayMrFox();
-  
-  }
-
-  moveright() {
-    console.log(MrFox.x, MrFox.y)
-
-    MrFox.x ++;
-    displayMrFox();
-
+    console.log(`Mr Fox is at x: ${MrFox.x}, y: ${MrFox.y} `)
   }
 
   displayHealth() {
-    return health;
+    return MrFox.health;
   }
 
-  spa(){
-    if(world[MrFox.y][MrFox.x] == 7 || world[MrFox.y][MrFox.x] == 8 ){
-      health+=10;
-      this.displayHealth();
-    }
-  }
+
 }

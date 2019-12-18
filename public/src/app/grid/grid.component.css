@@ -36,7 +36,7 @@
 }
 
 :host ::ng-deep div.empty {
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 :host ::ng-deep div.buttons {
@@ -76,6 +76,36 @@
     position: absolute;
 }
 
+:host ::ng-deep div.starbucks {
+    background-image: url('../../assets/images/starbucks.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+:host ::ng-deep div.spa {
+    background-image: url('../../assets/images/spa.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+:host ::ng-deep div.fountain {
+    background-image: url('../../assets/images/fountain.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+}
+
 :host ::ng-deep #health {
     border: 3px solid grey;
     border-radius: 5px;
@@ -87,7 +117,7 @@
     font-size: 24px;
     position: absolute;
     top: 80px;
-    margin-left: 1275px;
+    margin-left: 1260px;
 }
 
 :host ::ng-deep #MrFox {

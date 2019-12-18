@@ -51,8 +51,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 55px;
     position: absolute;
 }
 
@@ -62,7 +62,7 @@
     background-position: center;
     background-size: cover;
     width: 100px;
-    height: 100px;
+    height: 90px;
     position: absolute;
 }
 
@@ -81,8 +81,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 105px;
     position: absolute;
 }
 
@@ -106,6 +106,36 @@
     position: absolute;
 }
 
+:host ::ng-deep div.chocolate {
+    background-image: url('../../assets/images/chocolate.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+:host ::ng-deep div.meat {
+    background-image: url('../../assets/images/meatbone.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+:host ::ng-deep div.building {
+    background-image: url('../../assets/images/officebuilding.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 90px;
+    position: absolute;
+}
+
 :host ::ng-deep #health {
     border: 3px solid grey;
     border-radius: 5px;
@@ -125,8 +155,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     position: absolute;
 }
 

@@ -108,7 +108,16 @@ export class GridComponent implements OnInit {
   cat: any;
   health: any;
   world: any;
+  story1: Boolean;
+  story2: Boolean;
+  story3: Boolean;
+  story4: Boolean;
+  story5: Boolean;
   story6: Boolean;
+  story7: Boolean;
+  story8: Boolean;
+  story9: Boolean;
+  story10: Boolean;
   // moveup: any;
   // movedown: any;
   // moveleft: any;
@@ -132,20 +141,20 @@ export class GridComponent implements OnInit {
     };
     this.world = [
     [5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 11, 11],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 11],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 12, 12, 12, 12, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 1],
-    [1, 2, 2, 13, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
-    [1, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 8, 2, 2, 2, 1],
+    [1, 2, 2, 2, 2, 2, 2, 2, 18, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 11],
+    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 16, 2, 12, 12, 12, 12, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 1],
+    [1, 2, 2, 13, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+    [1, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 21, 2, 2, 2, 2, 2, 2, 1],
+    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 15, 2, 2, 2, 2, 2, 2, 8, 2, 2, 2, 1],
     [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 7, 2, 2, 2, 1],
-    [1, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+    [1, 3, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 14, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+    [1, 2, 2, 2, 2, 2, 2, 2, 2, 22, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
     [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 1],
     [1, 2, 10, 2, 2, 2, 2, 2, 2, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 1],
+    [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 1],
     [1, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 20, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 17, 2, 2, 2, 2, 2, 2, 2, 1],
     [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
     [11, 1, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 4, 1],
     [11, 11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,],
@@ -155,7 +164,16 @@ export class GridComponent implements OnInit {
   this.displayCat();
   this.displayHealth();
   this.moveCat();
+  this.story1 = false;
+  this.story2 = false;
+  this.story3 = false;
+  this.story4 = false;
+  this.story5 = false;
   this.story6 = false;
+  this.story7 = false;
+  this.story8 = false;
+  this.story9 = false;
+  this.story10 = false;
   
 }
 
@@ -189,6 +207,24 @@ displayWorld() {
         output += "<div class='building'></div>";
       if (this.world[i][j] == 12)
         output += "<div class='coffee'></div>";
+      if (this.world[i][j] == 15)
+        output += "<div class='cat'></div>";
+      if (this.world[i][j] == 16)
+        output += "<div class='servicedog'></div>";
+      if (this.world[i][j] == 13)
+        output += "<div class='man'></div>";
+      if (this.world[i][j] == 14)
+        output += "<div class='man'></div>";
+      if (this.world[i][j] == 17)
+        output += "<div class='horse'></div>";
+      if (this.world[i][j] == 18)
+        output += "<div class='cloud'></div>";
+      if (this.world[i][j] == 20)
+        output += "<div class='binnybob'></div>";
+      if (this.world[i][j] == 21)
+        output += "<div class='bird'></div>";
+      if (this.world[i][j] == 22)
+        output += "<div class='squirrel'></div>";
     }
     output += "</div>";
   }
@@ -213,7 +249,16 @@ moveCat() {
 }
 
 closeStory(){
+  this.story1 = null;
+  this.story2 = null;
+  this.story3 = null;
+  this.story4 = null;
+  this.story5 = null;
   this.story6 = null;
+  this.story7= null;
+  this.story8 = null;
+  this.story9 = null;
+  this.story10 = null;
 }
 
 @HostListener('document:keydown', ['$event']) 
@@ -235,22 +280,29 @@ onKeydownHandler(event: KeyboardEvent) {
   if (this.world[this.MrFox.y][this.MrFox.x] === 9) {
     this.world[this.MrFox.y][this.MrFox.x] = 2;
     this.health -= 20;
+    let audio = new Audio();
+    audio.src = "../../../assets/negative-beep.mp3";
+    audio.load();
+    audio.play()
 
 
   }
   else if (this.world[this.MrFox.y][this.MrFox.x] === 10) {
     this.world[this.MrFox.y][this.MrFox.x] = 2;
     this.health += 5;
+    let audio = new Audio();
+    audio.src = "../../../assets/sonic.mp3";
+    audio.load();
+    audio.play();
 
   }
   else if (this.world[this.MrFox.y][this.MrFox.x] === 12) {
     this.world[this.MrFox.y][this.MrFox.x] = 2;
     this.health += 10;
-
-  }
-
-  else if (this.world[this.MrFox.y][this.MrFox.x] === 7 || this.world[this.MrFox.y][this.MrFox.x] === 8) {
-    this.health += 5;
+    let audio = new Audio();
+    audio.src = "../../../assets/mario_coin.mp3";
+    audio.load();
+    audio.play();
 
   }
 
@@ -258,10 +310,49 @@ onKeydownHandler(event: KeyboardEvent) {
     this.world[this.MrFox.y][this.MrFox.x] = 2;
       this.health -= 10;
   }
-  
+  else if (this.world[this.MrFox.y][this.MrFox.x] === 15) {
+    this.story1 = true;
+    this.health -= 5;
+  }
+  else if (this.world[this.MrFox.y][this.MrFox.x] === 16) {
+    this.story2 = true;
+    this.health += 5;
+  }
+  else if (this.world[this.MrFox.y][this.MrFox.x] === 17) {
+    this.story3 = true;
+    this.health += 5;
+  }
+  else if (this.world[this.MrFox.y][this.MrFox.x] === 18) {
+    this.story4 = true;
+    this.health -= 10;
+  }
+
+  else if (this.world[this.MrFox.y][this.MrFox.x] === 7 || this.world[this.MrFox.y][this.MrFox.x] === 8) {
+    this.health += 10;
+    this.story5 = true;
+  }
   else if (this.world[this.MrFox.y][this.MrFox.x] === 13) {
     this.story6 = true;
     this.health -= 5;
+  }
+  else if (this.world[this.MrFox.y][this.MrFox.x] === 14) {
+    this.story7 = true;
+    this.health -= 5;
+  }
+  else if (this.world[this.MrFox.y][this.MrFox.x] === 20) {
+    this.story8 = true;
+    this.MrFox.y = Math.floor(Math.random()*2)
+    this.MrFox.x = Math.floor(Math.random()*2)
+  }
+  else if (this.world[this.MrFox.y][this.MrFox.x] === 21) {
+    this.story9 = true;
+    this.MrFox.y = Math.floor(Math.random()*2)
+    this.MrFox.x = Math.floor(Math.random()*2)
+  }
+  else if (this.world[this.MrFox.y][this.MrFox.x] === 22) {
+    this.story10 = true;
+    this.MrFox.y = Math.floor(Math.random()*2)
+    this.MrFox.x = Math.floor(Math.random()*2)
   }
 
   this.displayWorld();

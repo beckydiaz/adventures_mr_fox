@@ -772,24 +772,24 @@ let GridComponent = class GridComponent {
             y: 1
         };
         this.world = [
-            [5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 11, 11],
-            [1, 2, 2, 2, 2, 2, 2, 2, 18, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 11],
-            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 16, 2, 12, 12, 12, 12, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 1],
-            [1, 2, 2, 13, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
-            [1, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 21, 2, 2, 2, 2, 2, 2, 1],
-            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 15, 2, 2, 2, 2, 2, 2, 8, 2, 2, 2, 1],
-            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 7, 2, 2, 2, 1],
-            [1, 3, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
-            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 14, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
-            [1, 2, 2, 2, 2, 2, 2, 2, 2, 22, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
-            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 1],
-            [1, 2, 10, 2, 2, 2, 2, 2, 2, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
-            [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 1],
-            [1, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
-            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 20, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 17, 2, 2, 2, 2, 2, 2, 2, 1],
-            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
-            [11, 1, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 4, 1],
-            [11, 11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,],
+            [5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+            [3, 2, 2, 2, 2, 2, 2, 2, 18, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 11, 11, 3],
+            [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 16, 2, 12, 12, 12, 12, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 11, 3],
+            [3, 2, 2, 13, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3],
+            [3, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 21, 2, 2, 2, 3, 2, 2, 3],
+            [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 15, 2, 2, 2, 2, 2, 2, 8, 3, 3, 2, 3],
+            [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 7, 3, 2, 2, 3],
+            [3, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3],
+            [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 14, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3],
+            [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3],
+            [3, 2, 2, 2, 2, 2, 2, 2, 2, 22, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 3],
+            [3, 2, 10, 2, 2, 2, 2, 2, 2, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3],
+            [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 3],
+            [3, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3],
+            [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 20, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 17, 2, 2, 2, 2, 2, 2, 2, 3],
+            [3, 11, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3],
+            [3, 11, 11, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 4, 3],
+            [3, 33, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
         ];
         this.displayWorld();
         this.displayMrFox();
@@ -887,16 +887,16 @@ let GridComponent = class GridComponent {
         this.story10 = null;
     }
     onKeydownHandler(event) {
-        if (event.keyCode === 37 && this.world[this.MrFox.y][this.MrFox.x - 1] != 1) {
+        if (event.keyCode === 37 && this.world[this.MrFox.y][this.MrFox.x - 1] != 3) {
             this.MrFox.x--;
         }
-        else if (event.keyCode == 39 && this.world[this.MrFox.y][this.MrFox.x + 1] != 1) {
+        else if (event.keyCode == 39 && this.world[this.MrFox.y][this.MrFox.x + 1] != 3) {
             this.MrFox.x++;
         }
-        else if (event.keyCode == 38 && this.world[this.MrFox.y - 1][this.MrFox.x] != 1) {
+        else if (event.keyCode == 38 && this.world[this.MrFox.y - 1][this.MrFox.x] != 3) {
             this.MrFox.y--;
         }
-        else if (event.keyCode == 40 && this.world[this.MrFox.y + 1][this.MrFox.x] != 1) {
+        else if (event.keyCode == 40 && this.world[this.MrFox.y + 1][this.MrFox.x] != 3) {
             this.MrFox.y++;
         }
         if (this.world[this.MrFox.y][this.MrFox.x] === 9) {
@@ -938,6 +938,10 @@ let GridComponent = class GridComponent {
         else if (this.world[this.MrFox.y][this.MrFox.x] === 17) {
             this.story3 = true;
             this.health += 5;
+            let audio = new Audio();
+            audio.src = "../../../assets/adrien_sound.mp3";
+            audio.load();
+            audio.play();
         }
         else if (this.world[this.MrFox.y][this.MrFox.x] === 18) {
             this.story4 = true;
@@ -950,25 +954,34 @@ let GridComponent = class GridComponent {
         else if (this.world[this.MrFox.y][this.MrFox.x] === 13) {
             this.story6 = true;
             this.health -= 5;
+            let audio = new Audio();
+            audio.src = "../../../assets/ryan.mp3";
+            audio.load();
+            audio.play();
         }
         else if (this.world[this.MrFox.y][this.MrFox.x] === 14) {
             this.story7 = true;
             this.health -= 5;
+            let audio = new Audio();
         }
         else if (this.world[this.MrFox.y][this.MrFox.x] === 20) {
             this.story8 = true;
-            this.MrFox.y = Math.floor(Math.random() * 2);
-            this.MrFox.x = Math.floor(Math.random() * 2);
+            this.MrFox.y = Math.floor(Math.random() * 10);
+            this.MrFox.x = Math.floor(Math.random() * 10);
+            let audio = new Audio();
+            audio.src = "../../../assets/adrien_sound.mp3";
+            audio.load();
+            audio.play();
         }
         else if (this.world[this.MrFox.y][this.MrFox.x] === 21) {
             this.story9 = true;
-            this.MrFox.y = Math.floor(Math.random() * 2);
-            this.MrFox.x = Math.floor(Math.random() * 2);
+            this.MrFox.y = Math.floor(Math.random() * 10);
+            this.MrFox.x = Math.floor(Math.random() * 10);
         }
         else if (this.world[this.MrFox.y][this.MrFox.x] === 22) {
             this.story10 = true;
-            this.MrFox.y = Math.floor(Math.random() * 2);
-            this.MrFox.x = Math.floor(Math.random() * 2);
+            this.MrFox.y = Math.floor(Math.random() * 10);
+            this.MrFox.x = Math.floor(Math.random() * 10);
         }
         this.displayWorld();
         this.displayMrFox();

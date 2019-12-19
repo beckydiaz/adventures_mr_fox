@@ -3,97 +3,6 @@ import { HttpService } from '../http.service';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 
 
-
-// var world = [
-
-//   [5, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 8, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 7, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 11, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-// ];
-
-
-// class Character {
-//   name: string;
-//   health: number;
-//   x: number;
-//   y: number;
-
-//   constructor(name, health = 50, x, y) {
-//     this.name = name;
-//     this.health = health;
-//     this.x = x;
-//     this.y = y;
-//   }
-//   showStats() {
-//     console.log(`Name: ${this.name}, Health: ${this.health}`);
-//   }
-//   sayName() {
-//     console.log(`My name is ${this.name}`)
-//   }
-//   eatTreat() {
-//     this.health += 5;
-//   }
-//   drinksPupaccino() {
-//     this.health += 5;
-//   }
-//   visitSpa() {
-//     this.health += 10;
-//   }
-//   eatChocolate() {
-//     this.health -= 5;
-//   }
-//   seesRainstorm() {
-//     this.health -= 10;
-//   }
-//   seesLake() {
-//     this.health -= 5;
-//   }
-//   seesDogFriend() {
-//     this.health += 5;
-//   }
-//   seesMrNibbles() {
-//     this.health += 5;
-//   }
-//   seesAnne() {
-//     this.health += 5;
-//   }
-//   seesAdrien() {
-//     this.health -= 5;
-//   }
-//   seesRyan() {
-//     this.health -= 5;
-//   }
-
-// }
-
-// var MrFox = new Character('Mr. Fox', 50, 1, 1)
-
-
-// function displayMrFox() {
-//   document.getElementById('MrFox').style.top = MrFox.y * 30 + "px";
-//   document.getElementById('MrFox').style.left = MrFox.x * 30 + "px";
-//   return MrFox;
-// }
-
-// var Cat = 'Cat'
-
-
 // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @Component({
@@ -118,10 +27,11 @@ export class GridComponent implements OnInit {
   story8: Boolean;
   story9: Boolean;
   story10: Boolean;
-  // moveup: any;
-  // movedown: any;
-  // moveleft: any;
-  // moveright: any;
+  story11: Boolean;
+  story12: Boolean;
+  story13: Boolean;
+  game: Boolean;
+
 
   constructor(
     private _httpService: HttpService,
@@ -141,8 +51,8 @@ export class GridComponent implements OnInit {
     };
     this.world = [
     [5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
-    [3, 2, 2, 2, 2, 2, 2, 2, 18, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 11, 11, 3],
-    [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 16, 2, 12, 12, 12, 12, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 11, 3],
+    [3, 1, 1, 2, 2, 2, 2, 2, 18, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 11, 11, 3],
+    [3, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 16, 2, 12, 12, 12, 12, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 11, 3],
     [3, 2, 2, 13, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3],
     [3, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 21, 2, 2, 2, 3, 2, 2, 3],
     [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 15, 2, 2, 2, 2, 2, 2, 8, 3, 3, 2, 3],
@@ -155,7 +65,7 @@ export class GridComponent implements OnInit {
     [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 3],
     [3, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3],
     [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 20, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 17, 2, 2, 2, 2, 2, 2, 2, 3],
-    [3, 11, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3],
+    [3, 11, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 23, 2, 3],
     [3, 11,11, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 4, 3],
     [3, 33, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
   ];
@@ -174,6 +84,10 @@ export class GridComponent implements OnInit {
   this.story8 = false;
   this.story9 = false;
   this.story10 = false;
+  this.story11 = false;
+  this.story12 = false;
+  this.story13 = false;
+  this.game = false;
   
 }
 
@@ -225,10 +139,11 @@ displayWorld() {
         output += "<div class='bird'></div>";
       if (this.world[i][j] == 22)
         output += "<div class='squirrel'></div>";
+      if (this.world[i][j] == 23)
+        output += "<div class='anne'></div>";
     }
     output += "</div>";
   }
-  // console.log(output);
   document.getElementById('world').innerHTML = output;
 }
 displayMrFox() {
@@ -259,7 +174,12 @@ closeStory(){
   this.story8 = null;
   this.story9 = null;
   this.story10 = null;
+  this.story11 = null;
+  this.story12 = null;
+  this.story13 = null;
+  this.game = null;
 }
+
 
 @HostListener('document:keydown', ['$event']) 
 onKeydownHandler(event: KeyboardEvent) {
@@ -347,6 +267,9 @@ onKeydownHandler(event: KeyboardEvent) {
     this.story7 = true;
     this.health -= 5;
     let audio = new Audio();
+    audio.src = "../../../assets/adrien.mp3";
+    audio.load();
+    audio.play();
   }
   else if (this.world[this.MrFox.y][this.MrFox.x] === 20) {
     this.story8 = true;
@@ -367,6 +290,28 @@ onKeydownHandler(event: KeyboardEvent) {
     this.MrFox.y = Math.floor(Math.random()*10)
     this.MrFox.x = Math.floor(Math.random()*10)
   }
+  else if (this.world[this.MrFox.y][this.MrFox.x] === 23) {
+    this.story11 = true;
+  }
+  else if (this.world[this.MrFox.y][this.MrFox.x] === 4) {
+    this.story12 = true;
+    let audio = new Audio();
+    audio.src = "../../../assets/welcomehome.mp3";
+    audio.load();
+    audio.play();
+    this.MrFox.y = 1;
+    this.MrFox.x = 1;
+    this.health = 50;
+
+  }
+  else if(this.health <= 0){
+    this.story13 = true;
+  }
+
+  else if (this.world[this.MrFox.y][this.MrFox.x] === 1) {
+    this.game = true;
+  }
+  
 
   this.displayWorld();
   this.displayMrFox();

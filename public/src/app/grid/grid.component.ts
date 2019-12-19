@@ -122,7 +122,7 @@ export class GridComponent implements OnInit {
   ngOnInit() {
     this.health = 50;
     this.cat = {
-      x: 14,
+      x: 13,
       y: 1
     };
     this.MrFox = {
@@ -154,6 +154,7 @@ export class GridComponent implements OnInit {
   this.displayMrFox();
   this.displayCat();
   this.displayHealth();
+  this.moveCat();
   
 }
 
@@ -206,6 +207,11 @@ displayHealth() {
   document.getElementById("health").innerHTML = this.health;
 }
 
+moveCat() {
+    this.cat.x = this.cat.x - 2;
+}
+
+
 
 @HostListener('document:keydown', ['$event']) 
 onKeydownHandler(event: KeyboardEvent) {
@@ -225,7 +231,7 @@ onKeydownHandler(event: KeyboardEvent) {
 
   if (this.world[this.MrFox.y][this.MrFox.x] === 9) {
     this.world[this.MrFox.y][this.MrFox.x] = 2;
-    this.health -= 15;
+    this.health -= 20;
 
 
   }
@@ -245,15 +251,16 @@ onKeydownHandler(event: KeyboardEvent) {
 
   }
 
-  // if (this.world[this.MrFox.y][this.MrFox.x] == this.world[this.cat.y][this.cat.x]) {
-  //   this.world[this.MrFox.y][this.MrFox.x] = 2 &&
-  //     this.health--;
-  // }
+  else if (this.world[this.MrFox.y][this.MrFox.x] == this.world[this.cat.y][this.cat.x]) {
+    this.world[this.MrFox.y][this.MrFox.x] = 2;
+      this.health -= 10;
+  }
 
   this.displayWorld();
   this.displayMrFox();
   this.displayHealth();
-  
-  
-}
+  this.displayCat();
+  this.moveCat();
+
+  } 
 }

@@ -764,7 +764,7 @@ let GridComponent = class GridComponent {
     ngOnInit() {
         this.health = 50;
         this.cat = {
-            x: 14,
+            x: 13,
             y: 1
         };
         this.MrFox = {
@@ -796,6 +796,7 @@ let GridComponent = class GridComponent {
         this.displayMrFox();
         this.displayCat();
         this.displayHealth();
+        this.moveCat();
     }
     displayWorld() {
         var output = "";
@@ -843,6 +844,9 @@ let GridComponent = class GridComponent {
     displayHealth() {
         document.getElementById("health").innerHTML = this.health;
     }
+    moveCat() {
+        this.cat.x = this.cat.x - 2;
+    }
     onKeydownHandler(event) {
         if (event.keyCode === 37 && this.world[this.MrFox.y][this.MrFox.x - 1] != 1) {
             this.MrFox.x--;
@@ -858,7 +862,7 @@ let GridComponent = class GridComponent {
         }
         if (this.world[this.MrFox.y][this.MrFox.x] === 9) {
             this.world[this.MrFox.y][this.MrFox.x] = 2;
-            this.health -= 15;
+            this.health -= 20;
         }
         else if (this.world[this.MrFox.y][this.MrFox.x] === 10) {
             this.world[this.MrFox.y][this.MrFox.x] = 2;
@@ -871,13 +875,15 @@ let GridComponent = class GridComponent {
         else if (this.world[this.MrFox.y][this.MrFox.x] === 7 || this.world[this.MrFox.y][this.MrFox.x] === 8) {
             this.health += 5;
         }
-        // if (this.world[this.MrFox.y][this.MrFox.x] == this.world[this.cat.y][this.cat.x]) {
-        //   this.world[this.MrFox.y][this.MrFox.x] = 2 &&
-        //     this.health--;
-        // }
+        else if (this.world[this.MrFox.y][this.MrFox.x] == this.world[this.cat.y][this.cat.x]) {
+            this.world[this.MrFox.y][this.MrFox.x] = 2;
+            this.health -= 10;
+        }
         this.displayWorld();
         this.displayMrFox();
         this.displayHealth();
+        this.displayCat();
+        this.moveCat();
     }
 };
 GridComponent.ctorParameters = () => [
@@ -1489,7 +1495,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/lynneasmoyer/Documents/GitHub/adventures_mr_fox/public/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/nadiaouzounova/coding_dojo/git_hub/adventures_mr_fox-1/public/src/main.ts */"./src/main.ts");
 
 
 /***/ })

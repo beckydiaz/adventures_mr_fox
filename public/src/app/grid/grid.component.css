@@ -165,6 +165,101 @@
     
 }
 
+:host ::ng-deep div.cat {
+    background-image: url('../../assets/images/cat.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: grey;
+    outline: 1px solid rgb(208, 220, 231);
+    width: 40px;
+    height: 40px;
+    
+}
+
+:host ::ng-deep div.man {
+    background-image: url('../../assets/images/man.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: grey;
+    outline: 1px solid rgb(208, 220, 231);
+    width: 40px;
+    height: 40px;
+    
+}
+
+:host ::ng-deep div.horse {
+    background-image: url('../../assets/images/horse.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: grey;
+    outline: 1px solid rgb(208, 220, 231);
+    width: 40px;
+    height: 40px;
+    
+}
+
+:host ::ng-deep div.cloud {
+    background-image: url('../../assets/images/cloud.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: grey;
+    outline: 1px solid rgb(208, 220, 231);
+    width: 40px;
+    height: 40px;
+    
+}
+:host ::ng-deep div.squirrel {
+    background-image: url('../../assets/images/squirrel.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: grey;
+    outline: 1px solid rgb(208, 220, 231);
+    width: 40px;
+    height: 40px;
+    
+}
+
+:host ::ng-deep div.binnybob {
+    background-image: url('../../assets/images/binnybob2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: grey;
+    outline: 1px solid rgb(208, 220, 231);
+    width: 40px;
+    height: 40px;
+    
+}
+
+:host ::ng-deep div.bird {
+    background-image: url('../../assets/images/bird.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: grey;
+    outline: 1px solid rgb(208, 220, 231);
+    width: 40px;
+    height: 40px;
+    
+}
+
+:host ::ng-deep div.servicedog {
+    background-image: url('../../assets/images/servicedog.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: grey;
+    outline: 1px solid rgb(208, 220, 231);
+    width: 40px;
+    height: 40px;
+    
+}
+
 :host ::ng-deep #health {
     border: 3px solid grey;
     border-radius: 5px;

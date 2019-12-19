@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>game works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\"\n        integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">\n    <title>Document</title>\n</head>\n\n<body>\n    <div class=\"card\" style=\"width: 18rem;\">\n        <img src=\"../../assets/images/dojo.png\" style= \"width: 150px; height: 150px\" class=\"card-img-top\" alt=\"cat image\">\n        <div class=\"card-body\">\n            <h5 class=\"card-title\">Welcome to the Adventures of Mr. Fox!</h5>\n            <p class=\"card-text\">Mr. Fox is lost at CodingDojo. Help him find his way home!</p>\n        </div>\n    </div>\n</body>\n\n</html>");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!-- <h1>Adventures of Mr. Fox</h1>\n\n<div id='container'>\n    <div [innerHTML]=\"stuff\" id='world'></div>\n    <div id='MrFox'></div>\n    <div id=\"Cat\"></div>\n    <div [innerHTML]='MrFox.health' id='health'></div>\n    <br>\n<div class = \"buttons\">\n    <button (click)=\"moveMrFox('up')\">UP</button><br>\n    <button (click)=\"moveMrFox('left')\">LEFT</button>\n    <button (click)=\"moveMrFox('right')\">RIGHT</button><br>\n    <button (click)=\"moveMrFox('down')\">DOWN</button>\n</div>\n\n</div> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Document</title>\n</head>\n<body>\n    <div id=\"container\">\n        <div id='world'> </div>\n        <div id='MrFox'></div>\n        <div id='cat'></div>\n        <div id='health' innerHTML='this.health'>Health:</div> \n    </div> \n    <div class=\"popup\">\n            <button *ngIf='story1' (click)=\"closeStory()\">X</button>\n            <app-story1 *ngIf='story1'></app-story1>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story2' (click)=\"closeStory()\">X</button>\n            <app-story2 *ngIf='story2'></app-story2>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story3' (click)=\"closeStory()\">X</button>\n            <app-story3 *ngIf='story3'></app-story3>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story4' (click)=\"closeStory()\">X</button>\n            <app-story4 *ngIf='story4'></app-story4>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story5' (click)=\"closeStory()\">X</button>\n            <app-story5 *ngIf='story5'></app-story5>\n    </div>\n    <div class=\"popup\">\n        <button *ngIf='story6' (click)=\"closeStory()\">X</button>\n        <app-story6 *ngIf='story6'></app-story6>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story7' (click)=\"closeStory()\">X</button>\n            <app-story7 *ngIf='story7'></app-story7>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story8' (click)=\"closeStory()\">X</button>\n            <app-story8 *ngIf='story8'></app-story8>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story9' (click)=\"closeStory()\">X</button>\n            <app-story9 *ngIf='story9'></app-story9>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story10' (click)=\"closeStory()\">X</button>\n            <app-story10 *ngIf='story10'></app-story10>\n    </div>\n</body>");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- <h1>Adventures of Mr. Fox</h1>\n\n<div id='container'>\n    <div [innerHTML]=\"stuff\" id='world'></div>\n    <div id='MrFox'></div>\n    <div id=\"Cat\"></div>\n    <div [innerHTML]='MrFox.health' id='health'></div>\n    <br>\n<div class = \"buttons\">\n    <button (click)=\"moveMrFox('up')\">UP</button><br>\n    <button (click)=\"moveMrFox('left')\">LEFT</button>\n    <button (click)=\"moveMrFox('right')\">RIGHT</button><br>\n    <button (click)=\"moveMrFox('down')\">DOWN</button>\n</div>\n\n</div> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Document</title>\n</head>\n<body>\n    <div id=\"container\">\n        <div id='world'> </div>\n        <div id='MrFox'></div>\n        <div id='cat'></div>\n        <div id='health' innerHTML='this.health'>Health:</div> \n    </div> \n    <div class=\"popup\">\n            <button *ngIf='story1' (click)=\"closeStory()\">X</button>\n            <app-story1 *ngIf='story1'></app-story1>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story2' (click)=\"closeStory()\">X</button>\n            <app-story2 *ngIf='story2'></app-story2>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story3' (click)=\"closeStory()\">X</button>\n            <app-story3 *ngIf='story3'></app-story3>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story4' (click)=\"closeStory()\">X</button>\n            <app-story4 *ngIf='story4'></app-story4>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story5' (click)=\"closeStory()\">X</button>\n            <app-story5 *ngIf='story5'></app-story5>\n    </div>\n    <div class=\"popup\">\n        <button *ngIf='story6' (click)=\"closeStory()\">X</button>\n        <app-story6 *ngIf='story6'></app-story6>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story7' (click)=\"closeStory()\">X</button>\n            <app-story7 *ngIf='story7'></app-story7>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story8' (click)=\"closeStory()\">X</button>\n            <app-story8 *ngIf='story8'></app-story8>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story9' (click)=\"closeStory()\">X</button>\n            <app-story9 *ngIf='story9'></app-story9>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story10' (click)=\"closeStory()\">X</button>\n            <app-story10 *ngIf='story10'></app-story10>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story11' (click)=\"closeStory()\">X</button>\n            <app-story11 *ngIf='story11'></app-story11>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story12' (click)=\"closeStory()\">X</button>\n            <app-story12 *ngIf='story12'></app-story12>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='story13' (click)=\"ngOnInit()\">X</button>\n            <app-story13 *ngIf='story13'></app-story13>\n    </div>\n    <div class=\"popup\">\n            <button *ngIf='game' (click)=\"closeStory()\">X</button>\n            <app-game *ngIf='game'></app-game>\n    </div>\n</body>");
 
 /***/ }),
 
@@ -98,6 +98,45 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\"\n        integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">\n    <title>Ms. Squirrel</title>\n</head>\n<body>\n    <div class=\"card\" style=\"width: 18rem;\">\n        <img src=\"../../assets/images/squirrel.png\" style= \"width: 150px; height: 150px\" class=\"card-img-top\" alt=\"cat image\">\n        <div class=\"card-body\">\n            <h5 class=\"card-title\">Mr. Fox chases Ms. Squirrel!</h5>\n            <p class=\"card-text\">You lose her, snap back into reality, oop there goes gravity, and you are now super lost.</p>\n        </div>\n    </div>\n</body>\n</html>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/story11/story11.component.html":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/story11/story11.component.html ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\"\n        integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">\n    <title></title>\n</head>\n<body>\n    <div class=\"card\" style=\"width: 18rem;\">\n        <img src=\"../../assets/images/anne.jpeg\" style= \"width: 100%; height: 100%\" class=\"card-img-top\" alt=\"cat image\">\n        <div class=\"card-body\">\n            <h5 class=\"card-title\">Friendly Anne says, \"Where have you been Mr. Fox?! I've modified your training algorithm!</h5>\n            <p class=\"card-text\">Let's try this: <span style=\"font-style: italic; font-weight: bold;\">findhome(Mr. Fox)</span></p><br>\n        </div>\n    </div>\n</body>\n</html>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/story12/story12.component.html":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/story12/story12.component.html ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\"\n        integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">\n    <title></title>\n</head>\n<body>\n    <div class=\"card\" style=\"width: 18rem;\">\n        <img src=\"../../assets/images/LynneandMrFox.JPG\" style= \"width: 100%; height: 100%\" class=\"card-img-top\" alt=\"cat image\">\n        <div class=\"card-body\">\n            <h5 class=\"card-title\">You win, welcome home, Mr. Fox!</h5>\n        </div>\n    </div>\n</body>\n</html>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/story13/story13.component.html":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/story13/story13.component.html ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\"\n        integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">\n    <title></title>\n</head>\n<body>\n    <div class=\"card\" style=\"width: 18rem; text-align: center\">\n        <img src=\"../../assets/images/lostdog.JPG\" style= \"width: 100%; height: 100%\" class=\"card-img-top\" alt=\"cat image\">\n        <div class=\"card-body\">\n            <h5 class=\"card-title\">LOST DOG. You are out of health Mr. Fox. Take a nap and try again tomorrow!</h5>\n        </div>\n    </div>\n</body>\n</html>\n");
 
 /***/ }),
 
@@ -162,7 +201,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\"\n        integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">\n    <title>Evil Stranger Ryan</title>\n</head>\n<body>\n    <div class=\"card\" style=\"width: 18rem;\">\n        <img src=\"../../assets/images/ryan.jpg\" style= \"width: 150px; height: 150px\" class=\"card-img-top\" alt=\"cat image\">\n        <div class=\"card-body\">\n            <h5 class=\"card-title\">Evil Ryan says, \"Hey, python! Here's the thing. You've made me BIG MAD.\"</h5>\n            <p class=\"card-text\">Ryan throws a python at you. Lose 5 points.</p>\n        </div>\n    </div>\n</body>\n</html>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\"\n        integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">\n    <title>Evil Stranger Ryan</title>\n</head>\n<body>\n    <div class=\"card\" style=\"width: 18rem;\">\n        <img src=\"../../assets/images/ryan.jpg\" style= \"width: 100%; height: 100%\" class=\"card-img-top\" alt=\"cat image\">\n        <div class=\"card-body\">\n            <h5 class=\"card-title\">Evil Ryan says, \"Hey, python! Here's the thing. You've made me BIG MAD.\"</h5>\n            <p class=\"card-text\">Ryan throws a python at you. Lose 5 points.</p>\n        </div>\n    </div>\n</body>\n</html>\n");
 
 /***/ }),
 
@@ -175,7 +214,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\"\n        integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">\n    <title>Evil Stranger Adrien</title>\n</head>\n<body>\n    <div class=\"card\" style=\"width: 18rem;\">\n        <img src=\"../../assets/images/adrien.png\" style= \"width: 150px; height: 150px\" class=\"card-img-top\" alt=\"cat image\">\n        <div class=\"card-body\">\n            <h5 class=\"card-title\">Evil Adrien says, \"On your marker, get dataset, CODE!\"</h5>\n            <p class=\"card-text\">Your uprising has cost you 5 points.</p>\n        </div>\n    </div>\n</body>\n</html>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\"\n        integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">\n    <title>Evil Stranger Adrien</title>\n</head>\n<body>\n    <div class=\"card\" style=\"width: 18rem;\">\n        <img src=\"../../assets/images/adrien.png\" style= \"width: 100%; height: 100%\" class=\"card-img-top\" alt=\"cat image\">\n        <div class=\"card-body\">\n            <h5 class=\"card-title\">Evil Adrien says, \"On your marker, get dataset, CODE!\"</h5>\n            <p class=\"card-text\">Your uprising has cost you 5 points.</p>\n        </div>\n    </div>\n</body>\n</html>\n");
 
 /***/ }),
 
@@ -542,11 +581,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _story8_story8_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./story8/story8.component */ "./src/app/story8/story8.component.ts");
 /* harmony import */ var _story9_story9_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./story9/story9.component */ "./src/app/story9/story9.component.ts");
 /* harmony import */ var _story10_story10_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./story10/story10.component */ "./src/app/story10/story10.component.ts");
+/* harmony import */ var _story11_story11_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./story11/story11.component */ "./src/app/story11/story11.component.ts");
+/* harmony import */ var _story12_story12_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./story12/story12.component */ "./src/app/story12/story12.component.ts");
+/* harmony import */ var _story13_story13_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./story13/story13.component */ "./src/app/story13/story13.component.ts");
 
 
 
  //add this
  //add this
+
+
+
 
 
 
@@ -580,7 +625,10 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _story7_story7_component__WEBPACK_IMPORTED_MODULE_16__["Story7Component"],
             _story8_story8_component__WEBPACK_IMPORTED_MODULE_17__["Story8Component"],
             _story9_story9_component__WEBPACK_IMPORTED_MODULE_18__["Story9Component"],
-            _story10_story10_component__WEBPACK_IMPORTED_MODULE_19__["Story10Component"]
+            _story10_story10_component__WEBPACK_IMPORTED_MODULE_19__["Story10Component"],
+            _story11_story11_component__WEBPACK_IMPORTED_MODULE_20__["Story11Component"],
+            _story12_story12_component__WEBPACK_IMPORTED_MODULE_21__["Story12Component"],
+            _story13_story13_component__WEBPACK_IMPORTED_MODULE_22__["Story13Component"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -649,7 +697,7 @@ GameComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("/* * {\n    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;\n    text-align: center;\n    vertical-align: top;\n    display: inline-block; \n    box-sizing: border-box;\n}    */\n\n/* :host ::ng-deep #container {\n    border: grey;\n    border-radius: 5px;\n    box-sizing: border-box;\n    display: block;\n} */\n\n/* :host ::ng-deep body {\n    border: grey;\n    border-radius: 5px;\n    background-color: grey;\n    margin: 0px;\n} */\n\n:host ::ng-deep body {\n    margin: 0px;\n}\n\n:host ::ng-deep .row div {\n    width: 40px;\n    height: 40px;\n    display: inline-block;\n}\n\n:host ::ng-deep .row {\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.brick {\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n}\n\n:host ::ng-deep div.empty {\n    background-color: whitesmoke;\n}\n\n/* :host ::ng-deep div.buttons {\n    background-color: white;\n    display: inline-block;\n    margin-left: 1200px;\n    margin-top: -300px;\n} */\n\n:host ::ng-deep div.tree {\n    background-image: url('tree.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n}\n\n:host ::ng-deep div.dojo {\n    background-image: url('dojo.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    width: 40px;\n    height: 40px;\n}\n\n:host ::ng-deep div.house {\n    background-image: url('house.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n}\n\n:host ::ng-deep div.logo {\n    background-image: url('logo.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n}\n\n:host ::ng-deep div.spa {\n    background-image: url('spa.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n}\n\n:host ::ng-deep div.fountain {\n    background-image: url('fountain.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.chocolate {\n    background-image: url('chocolate.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.meat {\n    background-image: url('meatbone.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.building {\n    background-image: url('officebuilding.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n}\n\n:host ::ng-deep div.coffee {\n    background-image: url('coffeecup.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.cat {\n    background-image: url('cat.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.man {\n    background-image: url('man.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.horse {\n    background-image: url('horse.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.cloud {\n    background-image: url('cloud.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.squirrel {\n    background-image: url('squirrel.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.binnybob {\n    background-image: url('binnybob2.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.bird {\n    background-image: url('bird.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.servicedog {\n    background-image: url('servicedog.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep #health {\n    border: 3px solid grey;\n    border-radius: 5px;\n    width: 5%;\n    height: 8%;\n    color: red;\n    padding: 8px;\n    text-align: center;\n    font-size: 24px;\n    position: absolute;\n    top: 80px;\n    margin-left: 1350px;\n}\n\n:host ::ng-deep #MrFox {\n    background-image: url('shiba2.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 40px;\n    height: 40px;\n    position: absolute;\n}\n\n:host ::ng-deep button {\n    font-size: 24px;\n}\n\n:host ::ng-deep #cat {\n    background-image: url('cat.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 40px;\n    height: 40px;\n    position: absolute;\n}\n\n:host ::ng-deep .popup {\n    margin-left: 400px;\n    margin-top: -600px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZ3JpZC9ncmlkLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7OztNQU1NOztBQUVOOzs7OztHQUtHOztBQUVIOzs7OztHQUtHOztBQUVIO0lBQ0ksV0FBVztBQUNmOztBQUdBO0lBQ0ksV0FBVztJQUNYLFlBQVk7SUFDWixxQkFBcUI7QUFDekI7O0FBRUE7SUFDSSxZQUFZOztBQUVoQjs7QUFFQTtJQUNJLHNCQUFzQjtJQUN0QixxQ0FBcUM7QUFDekM7O0FBRUE7SUFDSSw0QkFBNEI7QUFDaEM7O0FBRUE7Ozs7O0dBS0c7O0FBRUg7SUFDSSxpQ0FBcUQ7SUFDckQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsc0JBQXNCO0lBQ3RCLHFDQUFxQztJQUNyQyxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLGlDQUFxRDtJQUNyRCw0QkFBNEI7SUFDNUIsMkJBQTJCO0lBQzNCLHNCQUFzQjtJQUN0QixzQkFBc0I7SUFDdEIsV0FBVztJQUNYLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxrQ0FBc0Q7SUFDdEQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsc0JBQXNCO0lBQ3RCLHFDQUFxQztJQUNyQyxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLGlDQUFxRDtJQUNyRCw0QkFBNEI7SUFDNUIsMkJBQTJCO0lBQzNCLHNCQUFzQjtJQUN0QixzQkFBc0I7SUFDdEIscUNBQXFDO0lBQ3JDLFdBQVc7SUFDWCxZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksZ0NBQW9EO0lBQ3BELDRCQUE0QjtJQUM1QiwyQkFBMkI7SUFDM0Isc0JBQXNCO0lBQ3RCLHNCQUFzQjtJQUN0QixxQ0FBcUM7SUFDckMsV0FBVztJQUNYLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxxQ0FBeUQ7SUFDekQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsc0JBQXNCO0lB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c291cmNlc0NvbnRlbnQiOlsiLyogKiB7XG4gICAgZm9udC1mYW1pbHk6IEltcGFjdCwgSGFldHRlbnNjaHdlaWxlciwgJ0FyaWFsIE5hcnJvdyBCb2xkJywgc2Fucy1zZXJpZjtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgdmVydGljYWwtYWxpZ246IHRvcDtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IFxuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG59ICAgICovXG5cbi8qIDpob3N0IDo6bmctZGVlcCAjY29udGFpbmVyIHtcbiAgICBib3JkZXI6IGdyZXk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gICAgZGlzcGxheTogYmxvY2s7XG59ICovXG5cbi8qIDpob3N0IDo6bmctZGVlcCBib2R5IHtcbiAgICBib3JkZXI6IGdyZXk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgbWFyZ2luOiAwcHg7XG59ICovXG5cbjpob3N0IDo6bmctZGVlcCBib2R5IHtcbiAgICBtYXJnaW46IDBweDtcbn1cblxuXG46aG9zdCA6Om5nLWRlZXAgLnJvdyBkaXYge1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG5cbjpob3N0IDo6bmctZGVlcCAucm93IHtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgXG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuYnJpY2sge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgb3V0bGluZTogMXB4IHNvbGlkIHJnYigyMDgsIDIyMCwgMjMxKTtcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGRpdi5lbXB0eSB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGVzbW9rZTtcbn1cblxuLyogOmhvc3QgOjpuZy1kZWVwIGRpdi5idXR0b25zIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgbWFyZ2luLWxlZnQ6IDEyMDBweDtcbiAgICBtYXJnaW4tdG9wOiAtMzAwcHg7XG59ICovXG5cbjpob3N0IDo6bmctZGVlcCBkaXYudHJlZSB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL3RyZWUucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LmRvam8ge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9kb2pvLnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuaG91c2Uge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9ob3VzZS5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgb3V0bGluZTogMXB4IHNvbGlkIHJnYigyMDgsIDIyMCwgMjMxKTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYubG9nbyB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL2xvZ28ucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LnNwYSB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL3NwYS5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgb3V0bGluZTogMXB4IHNvbGlkIHJnYigyMDgsIDIyMCwgMjMxKTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuZm91bnRhaW4ge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9mb3VudGFpbi5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgb3V0bGluZTogMXB4IHNvbGlkIHJnYigyMDgsIDIyMCwgMjMxKTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgXG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuY2hvY29sYXRlIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvY2hvY29sYXRlLnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcbiAgICBvdXRsaW5lOiAxcHggc29saWQgcmdiKDIwOCwgMjIwLCAyMzEpO1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGRpdi5tZWF0IHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvbWVhdGJvbmUucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIFxufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LmJ1aWxkaW5nIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvb2ZmaWNlYnVpbGRpbmcucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LmNvZmZlZSB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL2NvZmZlZWN1cC5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgb3V0bGluZTogMXB4IHNvbGlkIHJnYigyMDgsIDIyMCwgMjMxKTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgXG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuY2F0IHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvY2F0LnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcbiAgICBvdXRsaW5lOiAxcHggc29saWQgcmdiKDIwOCwgMjIwLCAyMzEpO1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGRpdi5tYW4ge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9tYW4ucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIFxufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LmhvcnNlIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvaG9yc2UucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIFxufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LmNsb3VkIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvY2xvdWQucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIFxufVxuOmhvc3QgOjpuZy1kZWVwIGRpdi5zcXVpcnJlbCB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL3NxdWlycmVsLnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcbiAgICBvdXRsaW5lOiAxcHggc29saWQgcmdiKDIwOCwgMjIwLCAyMzEpO1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGRpdi5iaW5ueWJvYiB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL2Jpbm55Ym9iMi5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgb3V0bGluZTogMXB4IHNvbGlkIHJnYigyMDgsIDIyMCwgMjMxKTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgXG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuYmlyZCB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL2JpcmQucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIFxufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LnNlcnZpY2Vkb2cge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9zZXJ2aWNlZG9nLnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcbiAgICBvdXRsaW5lOiAxcHggc29saWQgcmdiKDIwOCwgMjIwLCAyMzEpO1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBcbn1cblxuOmhvc3QgOjpuZy1kZWVwICNoZWFsdGgge1xuICAgIGJvcmRlcjogM3B4IHNvbGlkIGdyZXk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHdpZHRoOiA1JTtcbiAgICBoZWlnaHQ6IDglO1xuICAgIGNvbG9yOiByZWQ7XG4gICAgcGFkZGluZzogOHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LXNpemU6IDI0cHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogODBweDtcbiAgICBtYXJnaW4tbGVmdDogMTM1MHB4O1xufVxuXG46aG9zdCA6Om5nLWRlZXAgI01yRm94IHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvc2hpYmEyLnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGJ1dHRvbiB7XG4gICAgZm9udC1zaXplOiAyNHB4O1xufVxuXG46aG9zdCA6Om5nLWRlZXAgI2NhdCB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL2NhdC5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG59XG5cbjpob3N0IDo6bmctZGVlcCAucG9wdXAge1xuICAgIG1hcmdpbi1sZWZ0OiA0MDBweDtcbiAgICBtYXJnaW4tdG9wOiAtNjAwcHg7XG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = ("/* * {\n    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;\n    text-align: center;\n    vertical-align: top;\n    display: inline-block; \n    box-sizing: border-box;\n}    */\n\n/* :host ::ng-deep #container {\n    border: grey;\n    border-radius: 5px;\n    box-sizing: border-box;\n    display: block;\n} */\n\n/* :host ::ng-deep body {\n    border: grey;\n    border-radius: 5px;\n    background-color: grey;\n    margin: 0px;\n} */\n\n:host ::ng-deep body {\n    margin: 0px;\n}\n\n:host ::ng-deep .row div {\n    width: 40px;\n    height: 40px;\n    display: inline-block;\n}\n\n:host ::ng-deep .row {\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.brick {\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n}\n\n:host ::ng-deep div.empty {\n    background-color: whitesmoke;\n}\n\n/* :host ::ng-deep div.buttons {\n    background-color: white;\n    display: inline-block;\n    margin-left: 1200px;\n    margin-top: -300px;\n} */\n\n:host ::ng-deep div.tree {\n    background-image: url('tree.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n}\n\n:host ::ng-deep div.dojo {\n    background-image: url('dojo.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    width: 40px;\n    height: 40px;\n}\n\n:host ::ng-deep div.house {\n    background-image: url('house.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n}\n\n:host ::ng-deep div.logo {\n    background-image: url('logo.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n}\n\n:host ::ng-deep div.spa {\n    background-image: url('spa.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n}\n\n:host ::ng-deep div.fountain {\n    background-image: url('fountain.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.chocolate {\n    background-image: url('chocolate.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.meat {\n    background-image: url('meatbone.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.building {\n    background-image: url('officebuilding.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n}\n\n:host ::ng-deep div.coffee {\n    background-image: url('coffeecup.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.cat {\n    background-image: url('cat.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.man {\n    background-image: url('man.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.horse {\n    background-image: url('horse.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.cloud {\n    background-image: url('cloud.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.squirrel {\n    background-image: url('squirrel.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.binnybob {\n    background-image: url('binnybob2.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.bird {\n    background-image: url('bird.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.servicedog {\n    background-image: url('servicedog.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.anne {\n    background-image: url('anne.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep #health {\n    border: 3px solid grey;\n    border-radius: 5px;\n    width: 5%;\n    height: 8%;\n    color: red;\n    padding: 8px;\n    text-align: center;\n    font-size: 24px;\n    position: absolute;\n    top: 80px;\n    margin-left: 1350px;\n}\n\n:host ::ng-deep #MrFox {\n    background-image: url('shiba2.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 40px;\n    height: 40px;\n    position: absolute;\n}\n\n:host ::ng-deep button {\n    font-size: 24px;\n}\n\n:host ::ng-deep #cat {\n    background-image: url('cat.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 40px;\n    height: 40px;\n    position: absolute;\n}\n\n:host ::ng-deep .popup {\n    margin-left: 400px;\n    margin-top: -600px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZ3JpZC9ncmlkLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7OztNQU1NOztBQUVOOzs7OztHQUtHOztBQUVIOzs7OztHQUtHOztBQUVIO0lBQ0ksV0FBVztBQUNmOztBQUdBO0lBQ0ksV0FBVztJQUNYLFlBQVk7SUFDWixxQkFBcUI7QUFDekI7O0FBRUE7SUFDSSxZQUFZOztBQUVoQjs7QUFFQTtJQUNJLHNCQUFzQjtJQUN0QixxQ0FBcUM7QUFDekM7O0FBRUE7SUFDSSw0QkFBNEI7QUFDaEM7O0FBRUE7Ozs7O0dBS0c7O0FBRUg7SUFDSSxpQ0FBcUQ7SUFDckQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsc0JBQXNCO0lBQ3RCLHFDQUFxQztJQUNyQyxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLGlDQUFxRDtJQUNyRCw0QkFBNEI7SUFDNUIsMkJBQTJCO0lBQzNCLHNCQUFzQjtJQUN0QixzQkFBc0I7SUFDdEIsV0FBVztJQUNYLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxrQ0FBc0Q7SUFDdEQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsc0JBQXNCO0lBQ3RCLHFDQUFxQztJQUNyQyxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLGlDQUFxRDtJQUNyRCw0QkFBNEI7SUFDNUIsMkJBQTJCO0lBQzNCLHNCQUFzQjtJQUN0QixzQkFBc0I7SUFDdEIscUNBQXFDO0lBQ3JDLFdBQVc7SUFDWCxZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksZ0NBQW9EO0lBQ3BELDRCQUE0QjtJQUM1QiwyQkFBMkI7SUFDM0Isc0JBQXNCO0lBQ3RCLHNCQUFzQjtJQUN0QixxQ0FBcUM7SUFDckMsV0FBVztJQUNYLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxxQ0FBeUQ7SUFDekQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsc0JBQXNCO0lB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QVc7SUFDWCxZQUFZO0lBQ1osa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLGtCQUFrQjtBQUN0QiIsImZpbGUiOiJzcmMvYXBwL2dyaWQvZ3JpZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogKiB7XG4gICAgZm9udC1mYW1pbHk6IEltcGFjdCwgSGFldHRlbnNjaHdlaWxlciwgJ0FyaWFsIE5hcnJvdyBCb2xkJywgc2Fucy1zZXJpZjtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgdmVydGljYWwtYWxpZ246IHRvcDtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IFxuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG59ICAgICovXG5cbi8qIDpob3N0IDo6bmctZGVlcCAjY29udGFpbmVyIHtcbiAgICBib3JkZXI6IGdyZXk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gICAgZGlzcGxheTogYmxvY2s7XG59ICovXG5cbi8qIDpob3N0IDo6bmctZGVlcCBib2R5IHtcbiAgICBib3JkZXI6IGdyZXk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgbWFyZ2luOiAwcHg7XG59ICovXG5cbjpob3N0IDo6bmctZGVlcCBib2R5IHtcbiAgICBtYXJnaW46IDBweDtcbn1cblxuXG46aG9zdCA6Om5nLWRlZXAgLnJvdyBkaXYge1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG5cbjpob3N0IDo6bmctZGVlcCAucm93IHtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgXG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuYnJpY2sge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgb3V0bGluZTogMXB4IHNvbGlkIHJnYigyMDgsIDIyMCwgMjMxKTtcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGRpdi5lbXB0eSB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGVzbW9rZTtcbn1cblxuLyogOmhvc3QgOjpuZy1kZWVwIGRpdi5idXR0b25zIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgbWFyZ2luLWxlZnQ6IDEyMDBweDtcbiAgICBtYXJnaW4tdG9wOiAtMzAwcHg7XG59ICovXG5cbjpob3N0IDo6bmctZGVlcCBkaXYudHJlZSB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL3RyZWUucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LmRvam8ge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9kb2pvLnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuaG91c2Uge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9ob3VzZS5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgb3V0bGluZTogMXB4IHNvbGlkIHJnYigyMDgsIDIyMCwgMjMxKTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYubG9nbyB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL2xvZ28ucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LnNwYSB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL3NwYS5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgb3V0bGluZTogMXB4IHNvbGlkIHJnYigyMDgsIDIyMCwgMjMxKTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuZm91bnRhaW4ge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9mb3VudGFpbi5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgb3V0bGluZTogMXB4IHNvbGlkIHJnYigyMDgsIDIyMCwgMjMxKTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgXG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuY2hvY29sYXRlIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvY2hvY29sYXRlLnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcbiAgICBvdXRsaW5lOiAxcHggc29saWQgcmdiKDIwOCwgMjIwLCAyMzEpO1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGRpdi5tZWF0IHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvbWVhdGJvbmUucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIFxufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LmJ1aWxkaW5nIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvb2ZmaWNlYnVpbGRpbmcucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LmNvZmZlZSB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL2NvZmZlZWN1cC5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgb3V0bGluZTogMXB4IHNvbGlkIHJnYigyMDgsIDIyMCwgMjMxKTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgXG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuY2F0IHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvY2F0LnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcbiAgICBvdXRsaW5lOiAxcHggc29saWQgcmdiKDIwOCwgMjIwLCAyMzEpO1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGRpdi5tYW4ge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9tYW4ucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIFxufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LmhvcnNlIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvaG9yc2UucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIFxufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LmNsb3VkIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvY2xvdWQucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIFxufVxuOmhvc3QgOjpuZy1kZWVwIGRpdi5zcXVpcnJlbCB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL3NxdWlycmVsLnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcbiAgICBvdXRsaW5lOiAxcHggc29saWQgcmdiKDIwOCwgMjIwLCAyMzEpO1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGRpdi5iaW5ueWJvYiB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL2Jpbm55Ym9iMi5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgb3V0bGluZTogMXB4IHNvbGlkIHJnYigyMDgsIDIyMCwgMjMxKTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgXG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuYmlyZCB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL2JpcmQucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIFxufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LnNlcnZpY2Vkb2cge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9zZXJ2aWNlZG9nLnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcbiAgICBvdXRsaW5lOiAxcHggc29saWQgcmdiKDIwOCwgMjIwLCAyMzEpO1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGRpdi5hbm5lIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvYW5uZS5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgb3V0bGluZTogMXB4IHNvbGlkIHJnYigyMDgsIDIyMCwgMjMxKTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgXG59XG5cbjpob3N0IDo6bmctZGVlcCAjaGVhbHRoIHtcbiAgICBib3JkZXI6IDNweCBzb2xpZCBncmV5O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICB3aWR0aDogNSU7XG4gICAgaGVpZ2h0OiA4JTtcbiAgICBjb2xvcjogcmVkO1xuICAgIHBhZGRpbmc6IDhweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgZm9udC1zaXplOiAyNHB4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6IDgwcHg7XG4gICAgbWFyZ2luLWxlZnQ6IDEzNTBweDtcbn1cblxuOmhvc3QgOjpuZy1kZWVwICNNckZveCB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL3NoaWJhMi5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG59XG5cbjpob3N0IDo6bmctZGVlcCBidXR0b24ge1xuICAgIGZvbnQtc2l6ZTogMjRweDtcbn1cblxuOmhvc3QgOjpuZy1kZWVwICNjYXQge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9jYXQucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xufVxuXG46aG9zdCA6Om5nLWRlZXAgLnBvcHVwIHtcbiAgICBtYXJnaW4tbGVmdDogNDAwcHg7XG4gICAgbWFyZ2luLXRvcDogLTYwMHB4O1xufSJdfQ== */");
 
 /***/ }),
 
@@ -671,91 +719,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// var world = [
-//   [5, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 8, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 7, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 2, 2, 11, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2],
-//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-//   [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-// ];
-// class Character {
-//   name: string;
-//   health: number;
-//   x: number;
-//   y: number;
-//   constructor(name, health = 50, x, y) {
-//     this.name = name;
-//     this.health = health;
-//     this.x = x;
-//     this.y = y;
-//   }
-//   showStats() {
-//     console.log(`Name: ${this.name}, Health: ${this.health}`);
-//   }
-//   sayName() {
-//     console.log(`My name is ${this.name}`)
-//   }
-//   eatTreat() {
-//     this.health += 5;
-//   }
-//   drinksPupaccino() {
-//     this.health += 5;
-//   }
-//   visitSpa() {
-//     this.health += 10;
-//   }
-//   eatChocolate() {
-//     this.health -= 5;
-//   }
-//   seesRainstorm() {
-//     this.health -= 10;
-//   }
-//   seesLake() {
-//     this.health -= 5;
-//   }
-//   seesDogFriend() {
-//     this.health += 5;
-//   }
-//   seesMrNibbles() {
-//     this.health += 5;
-//   }
-//   seesAnne() {
-//     this.health += 5;
-//   }
-//   seesAdrien() {
-//     this.health -= 5;
-//   }
-//   seesRyan() {
-//     this.health -= 5;
-//   }
-// }
-// var MrFox = new Character('Mr. Fox', 50, 1, 1)
-// function displayMrFox() {
-//   document.getElementById('MrFox').style.top = MrFox.y * 30 + "px";
-//   document.getElementById('MrFox').style.left = MrFox.x * 30 + "px";
-//   return MrFox;
-// }
-// var Cat = 'Cat'
 // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 let GridComponent = class GridComponent {
-    // moveup: any;
-    // movedown: any;
-    // moveleft: any;
-    // moveright: any;
     constructor(_httpService, _route, _router) {
         this._httpService = _httpService;
         this._route = _route;
@@ -773,8 +738,8 @@ let GridComponent = class GridComponent {
         };
         this.world = [
             [5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
-            [3, 2, 2, 2, 2, 2, 2, 2, 18, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 11, 11, 3],
-            [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 16, 2, 12, 12, 12, 12, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 11, 3],
+            [3, 1, 1, 2, 2, 2, 2, 2, 18, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 11, 11, 3],
+            [3, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 16, 2, 12, 12, 12, 12, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 11, 3],
             [3, 2, 2, 13, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3],
             [3, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 21, 2, 2, 2, 3, 2, 2, 3],
             [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 15, 2, 2, 2, 2, 2, 2, 8, 3, 3, 2, 3],
@@ -787,7 +752,7 @@ let GridComponent = class GridComponent {
             [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 3],
             [3, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3],
             [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 20, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 17, 2, 2, 2, 2, 2, 2, 2, 3],
-            [3, 11, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3],
+            [3, 11, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 23, 2, 3],
             [3, 11, 11, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 4, 3],
             [3, 33, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
         ];
@@ -806,6 +771,10 @@ let GridComponent = class GridComponent {
         this.story8 = false;
         this.story9 = false;
         this.story10 = false;
+        this.story11 = false;
+        this.story12 = false;
+        this.story13 = false;
+        this.game = false;
     }
     displayWorld() {
         var output = "";
@@ -854,10 +823,11 @@ let GridComponent = class GridComponent {
                     output += "<div class='bird'></div>";
                 if (this.world[i][j] == 22)
                     output += "<div class='squirrel'></div>";
+                if (this.world[i][j] == 23)
+                    output += "<div class='anne'></div>";
             }
             output += "</div>";
         }
-        // console.log(output);
         document.getElementById('world').innerHTML = output;
     }
     displayMrFox() {
@@ -885,6 +855,10 @@ let GridComponent = class GridComponent {
         this.story8 = null;
         this.story9 = null;
         this.story10 = null;
+        this.story11 = null;
+        this.story12 = null;
+        this.story13 = null;
+        this.game = null;
     }
     onKeydownHandler(event) {
         if (event.keyCode === 37 && this.world[this.MrFox.y][this.MrFox.x - 1] != 3) {
@@ -963,6 +937,9 @@ let GridComponent = class GridComponent {
             this.story7 = true;
             this.health -= 5;
             let audio = new Audio();
+            audio.src = "../../../assets/adrien.mp3";
+            audio.load();
+            audio.play();
         }
         else if (this.world[this.MrFox.y][this.MrFox.x] === 20) {
             this.story8 = true;
@@ -982,6 +959,25 @@ let GridComponent = class GridComponent {
             this.story10 = true;
             this.MrFox.y = Math.floor(Math.random() * 10);
             this.MrFox.x = Math.floor(Math.random() * 10);
+        }
+        else if (this.world[this.MrFox.y][this.MrFox.x] === 23) {
+            this.story11 = true;
+        }
+        else if (this.world[this.MrFox.y][this.MrFox.x] === 4) {
+            this.story12 = true;
+            let audio = new Audio();
+            audio.src = "../../../assets/welcomehome.mp3";
+            audio.load();
+            audio.play();
+            this.MrFox.y = 1;
+            this.MrFox.x = 1;
+            this.health = 50;
+        }
+        else if (this.health <= 0) {
+            this.story13 = true;
+        }
+        else if (this.world[this.MrFox.y][this.MrFox.x] === 1) {
+            this.game = true;
         }
         this.displayWorld();
         this.displayMrFox();
@@ -1171,6 +1167,138 @@ Story10Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./story10.component.css */ "./src/app/story10/story10.component.css")).default]
     })
 ], Story10Component);
+
+
+
+/***/ }),
+
+/***/ "./src/app/story11/story11.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/story11/story11.component.css ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3N0b3J5MTEvc3RvcnkxMS5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/story11/story11.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/story11/story11.component.ts ***!
+  \**********************************************/
+/*! exports provided: Story11Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Story11Component", function() { return Story11Component; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let Story11Component = class Story11Component {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+Story11Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-story11',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./story11.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/story11/story11.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./story11.component.css */ "./src/app/story11/story11.component.css")).default]
+    })
+], Story11Component);
+
+
+
+/***/ }),
+
+/***/ "./src/app/story12/story12.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/story12/story12.component.css ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3N0b3J5MTIvc3RvcnkxMi5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/story12/story12.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/story12/story12.component.ts ***!
+  \**********************************************/
+/*! exports provided: Story12Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Story12Component", function() { return Story12Component; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let Story12Component = class Story12Component {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+Story12Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-story12',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./story12.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/story12/story12.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./story12.component.css */ "./src/app/story12/story12.component.css")).default]
+    })
+], Story12Component);
+
+
+
+/***/ }),
+
+/***/ "./src/app/story13/story13.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/story13/story13.component.css ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3N0b3J5MTMvc3RvcnkxMy5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/story13/story13.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/story13/story13.component.ts ***!
+  \**********************************************/
+/*! exports provided: Story13Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Story13Component", function() { return Story13Component; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let Story13Component = class Story13Component {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+Story13Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-story13',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./story13.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/story13/story13.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./story13.component.css */ "./src/app/story13/story13.component.css")).default]
+    })
+], Story13Component);
 
 
 

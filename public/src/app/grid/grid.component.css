@@ -1,33 +1,39 @@
-* {
+/* * {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     vertical-align: top;
-    /* display: inline-block; */
+    display: inline-block; 
     box-sizing: border-box;
-}
+}    */
 
-:host ::ng-deep #container {
+/* :host ::ng-deep #container {
     border: grey;
     border-radius: 5px;
     box-sizing: border-box;
     display: block;
-}
+} */
 
-:host ::ng-deep body {
+/* :host ::ng-deep body {
     border: grey;
     border-radius: 5px;
     background-color: grey;
     margin: 0px;
+} */
+
+:host ::ng-deep body {
+    margin: 0px;
+}
+
+
+:host ::ng-deep .row div {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
 }
 
 :host ::ng-deep .row {
-    height: 30px;
-}
-
-:host ::ng-deep .row div {
-    width: 30px;
-    height: 30px;
-    display: inline-block;
+    height: 40px;
+    
 }
 
 :host ::ng-deep div.brick {
@@ -39,21 +45,22 @@
     background-color: whitesmoke;
 }
 
-:host ::ng-deep div.buttons {
+/* :host ::ng-deep div.buttons {
     background-color: white;
     display: inline-block;
     margin-left: 1200px;
     margin-top: -300px;
-}
+} */
 
 :host ::ng-deep div.tree {
     background-image: url('../../assets/images/tree.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 50px;
-    height: 55px;
-    position: absolute;
+    background-color: grey;
+    outline: 1px solid rgb(208, 220, 231);
+    width: 40px;
+    height: 40px;
 }
 
 :host ::ng-deep div.dojo {
@@ -61,8 +68,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: grey;
     width: 100px;
-    height: 90px;
+    height: 100px;
     position: absolute;
 }
 
@@ -71,6 +79,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: grey;
+    outline: 1px solid rgb(208, 220, 231);
     width: 100px;
     height: 100px;
     position: absolute;
@@ -81,8 +91,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 120px;
-    height: 105px;
+    background-color: grey;
+    outline: 1px solid rgb(208, 220, 231);
+    width: 100px;
+    height: 100px;
     position: absolute;
 }
 
@@ -91,9 +103,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 50px;
-    height: 50px;
-    position: absolute;
+    background-color: grey;
+    outline: 1px solid rgb(208, 220, 231);
+    width: 40px;
+    height: 40px;
 }
 
 :host ::ng-deep div.fountain {
@@ -101,9 +114,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 90px;
-    height: 90px;
-    position: absolute;
+    background-color: grey;
+    outline: 1px solid rgb(208, 220, 231);
+    width: 40px;
+    height: 40px;
+    
 }
 
 :host ::ng-deep div.chocolate {
@@ -111,9 +126,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 30px;
-    height: 30px;
-    position: absolute;
+    background-color: grey;
+    outline: 1px solid rgb(208, 220, 231);
+    width: 40px;
+    height: 40px;
+    
 }
 
 :host ::ng-deep div.meat {
@@ -121,9 +138,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 30px;
-    height: 30px;
-    position: absolute;
+    background-color: grey;
+    outline: 1px solid rgb(208, 220, 231);
+    width: 40px;
+    height: 40px;
+    
 }
 
 :host ::ng-deep div.building {
@@ -131,19 +150,23 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: grey;
+    outline: 1px solid rgb(208, 220, 231);
     width: 100px;
-    height: 90px;
+    height: 100px;
     position: absolute;
 }
 
 :host ::ng-deep div.coffee {
-    background-image: url('../../assets/images/starbuckscoffee.png');
+    background-image: url('../../assets/images/coffeecup.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 30px;
-    height: 30px;
-    position: absolute;
+    background-color: grey;
+    outline: 1px solid rgb(208, 220, 231);
+    width: 40px;
+    height: 40px;
+    
 }
 
 :host ::ng-deep #health {
@@ -157,7 +180,7 @@
     font-size: 24px;
     position: absolute;
     top: 80px;
-    margin-left: 1260px;
+    margin-left: 1400px;
 }
 
 :host ::ng-deep #MrFox {
@@ -165,8 +188,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     position: absolute;
 }
 
@@ -174,12 +197,12 @@
     font-size: 24px;
 }
 
-:host ::ng-deep #Cat {
+:host ::ng-deep #cat {
     background-image: url('../../assets/images/cat.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     position: absolute;
 }

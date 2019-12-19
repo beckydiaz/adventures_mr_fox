@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<h1>Adventures of Mr. Fox</h1>\n\n<div id='container'>\n    <div [innerHTML]=\"stuff\" id='world'></div>\n    <div id='MrFox'></div>\n    <div id=\"Cat\"></div>\n    <div [innerHTML]='MrFox.health' id='health'></div>\n    <br>\n<div class = \"buttons\">\n    <button (click)=\"moveMrFox('up')\">UP</button><br>\n    <button (click)=\"moveMrFox('left')\">LEFT</button>\n    <button (click)=\"moveMrFox('right')\">RIGHT</button><br>\n    <button (click)=\"moveMrFox('down')\">DOWN</button>\n</div>\n\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- <h1>Adventures of Mr. Fox</h1>\n\n<div id='container'>\n    <div [innerHTML]=\"stuff\" id='world'></div>\n    <div id='MrFox'></div>\n    <div id=\"Cat\"></div>\n    <div [innerHTML]='MrFox.health' id='health'></div>\n    <br>\n<div class = \"buttons\">\n    <button (click)=\"moveMrFox('up')\">UP</button><br>\n    <button (click)=\"moveMrFox('left')\">LEFT</button>\n    <button (click)=\"moveMrFox('right')\">RIGHT</button><br>\n    <button (click)=\"moveMrFox('down')\">DOWN</button>\n</div>\n\n</div> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Document</title>\n</head>\n<body>\n    <div id=\"container\">\n        <div id='world'> </div>\n        <div id='MrFox'></div>\n        <div id='cat'></div>\n        <div id='health' innerHTML='this.health'>Health:</div> \n    </div> \n</body>");
 
 /***/ }),
 
@@ -649,7 +649,7 @@ GameComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("* {\n    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;\n    text-align: center;\n    vertical-align: top;\n    /* display: inline-block; */\n    box-sizing: border-box;\n}\n\n:host ::ng-deep #container {\n    border: grey;\n    border-radius: 5px;\n    box-sizing: border-box;\n    display: block;\n}\n\n:host ::ng-deep body {\n    border: grey;\n    border-radius: 5px;\n    background-color: grey;\n    margin: 0px;\n}\n\n:host ::ng-deep .row {\n    height: 30px;\n}\n\n:host ::ng-deep .row div {\n    width: 30px;\n    height: 30px;\n    display: inline-block;\n}\n\n:host ::ng-deep div.brick {\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n}\n\n:host ::ng-deep div.empty {\n    background-color: whitesmoke;\n}\n\n:host ::ng-deep div.buttons {\n    background-color: white;\n    display: inline-block;\n    margin-left: 1200px;\n    margin-top: -300px;\n}\n\n:host ::ng-deep div.tree {\n    background-image: url('tree.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 50px;\n    height: 55px;\n    position: absolute;\n}\n\n:host ::ng-deep div.dojo {\n    background-image: url('dojo.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 100px;\n    height: 90px;\n    position: absolute;\n}\n\n:host ::ng-deep div.house {\n    background-image: url('house.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 100px;\n    height: 100px;\n    position: absolute;\n}\n\n:host ::ng-deep div.starbucks {\n    background-image: url('starbucks.jpg');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 120px;\n    height: 105px;\n    position: absolute;\n}\n\n:host ::ng-deep div.spa {\n    background-image: url('spa.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 50px;\n    height: 50px;\n    position: absolute;\n}\n\n:host ::ng-deep div.fountain {\n    background-image: url('fountain.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 90px;\n    height: 90px;\n    position: absolute;\n}\n\n:host ::ng-deep div.chocolate {\n    background-image: url('chocolate.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 30px;\n    height: 30px;\n    position: absolute;\n}\n\n:host ::ng-deep div.meat {\n    background-image: url('meatbone.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 30px;\n    height: 30px;\n    position: absolute;\n}\n\n:host ::ng-deep div.building {\n    background-image: url('officebuilding.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 100px;\n    height: 90px;\n    position: absolute;\n}\n\n:host ::ng-deep div.coffee {\n    background-image: url('starbuckscoffee.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 30px;\n    height: 30px;\n    position: absolute;\n}\n\n:host ::ng-deep #health {\n    border: 3px solid grey;\n    border-radius: 5px;\n    width: 5%;\n    height: 8%;\n    color: red;\n    padding: 10px;\n    text-align: center;\n    font-size: 24px;\n    position: absolute;\n    top: 80px;\n    margin-left: 1260px;\n}\n\n:host ::ng-deep #MrFox {\n    background-image: url('shiba2.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 45px;\n    height: 45px;\n    position: absolute;\n}\n\n:host ::ng-deep button {\n    font-size: 24px;\n}\n\n:host ::ng-deep #Cat {\n    background-image: url('cat.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 45px;\n    height: 45px;\n    position: absolute;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZ3JpZC9ncmlkLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxzRUFBc0U7SUFDdEUsa0JBQWtCO0lBQ2xCLG1CQUFtQjtJQUNuQiwyQkFBMkI7SUFDM0Isc0JBQXNCO0FBQzFCOztBQUVBO0lBQ0ksWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixzQkFBc0I7SUFDdEIsY0FBYztBQUNsQjs7QUFFQTtJQUNJLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsc0JBQXNCO0lBQ3RCLFdBQVc7QUFDZjs7QUFFQTtJQUNJLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLHFCQUFxQjtBQUN6Qjs7QUFFQTtJQUNJLHNCQUFzQjtJQUN0QixxQ0FBcUM7QUFDekM7O0FBRUE7SUFDSSw0QkFBNEI7QUFDaEM7O0FBRUE7SUFDSSx1QkFBdUI7SUFDdkIscUJBQXFCO0lBQ3JCLG1CQUFtQjtJQUNuQixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxpQ0FBcUQ7SUFDckQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsV0FBVztJQUNYLFlBQVk7SUFDWixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxpQ0FBcUQ7SUFDckQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsWUFBWTtJQUNaLFlBQVk7SUFDWixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxrQ0FBc0Q7SUFDdEQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsWUFBWTtJQUNaLGFBQWE7SUFDYixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxzQ0FBMEQ7SUFDMUQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsWUFBWTtJQUNaLGFBQWE7SUFDYixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxnQ0FBb0Q7SUFDcEQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsV0FBVztJQUNYLFlBQVk7SUFDWixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxxQ0FBeUQ7SUFDekQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsV0FBVztJQUNYLFlBQVk7SUFDWixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxzQ0FBMEQ7SUFDMUQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsV0FBVztJQUNYLFlBQVk7SUFDWixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxxQ0FBeUQ7SUFDekQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsV0FBVztJQUNYLFlBQVk7SUFDWixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSwyQ0FBK0Q7SUFDL0QsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsWUFBWTtJQUNaLFlBQVk7SUFDWixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSw0Q0FBZ0U7SUFDaEUsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsV0FBVztJQUNYLFlBQVk7SUFDWixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxzQkFBc0I7SUFDdEIsa0JBQWtCO0lBQ2xCLFNBQVM7SUFDVCxVQUFVO0lBQ1YsVUFBVTtJQUNWLGFBQWE7SUFDYixrQkFBa0I7SUFDbEIsZUFBZTtJQUNmLGtCQUFrQjtJQUNsQixTQUFTO0lBQ1QsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksbUNBQXVEO0lBQ3ZELDRCQUE0QjtJQUM1QiwyQkFBMkI7SUFDM0Isc0JBQXNCO0lBQ3RCLFdBQVc7SUFDWCxZQUFZO0lBQ1osa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksZUFBZTtBQUNuQjs7QUFFQTtJQUNJLGdDQUFvRDtJQUNwRCw0QkFBNEI7SUFDNUIsMkJBQTJCO0lBQzNCLHNCQUFzQjtJQUN0QixXQUFXO0lBQ1gsWUFBWTtJQUNaLGtCQUFrQjtBQUN0QiIsImZpbGUiOiJzcmMvYXBwL2dyaWQvZ3JpZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiKiB7XG4gICAgZm9udC1mYW1pbHk6IEltcGFjdCwgSGFldHRlbnNjaHdlaWxlciwgJ0FyaWFsIE5hcnJvdyBCb2xkJywgc2Fucy1zZXJpZjtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgdmVydGljYWwtYWxpZ246IHRvcDtcbiAgICAvKiBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7ICovXG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbn1cblxuOmhvc3QgOjpuZy1kZWVwICNjb250YWluZXIge1xuICAgIGJvcmRlcjogZ3JleTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICBkaXNwbGF5OiBibG9jaztcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGJvZHkge1xuICAgIGJvcmRlcjogZ3JleTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcbiAgICBtYXJnaW46IDBweDtcbn1cblxuOmhvc3QgOjpuZy1kZWVwIC5yb3cge1xuICAgIGhlaWdodDogMzBweDtcbn1cblxuOmhvc3QgOjpuZy1kZWVwIC5yb3cgZGl2IHtcbiAgICB3aWR0aDogMzBweDtcbiAgICBoZWlnaHQ6IDMwcHg7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LmJyaWNrIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuZW1wdHkge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlc21va2U7XG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuYnV0dG9ucyB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIG1hcmdpbi1sZWZ0OiAxMjAwcHg7XG4gICAgbWFyZ2luLXRvcDogLTMwMHB4O1xufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LnRyZWUge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy90cmVlLnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgd2lkdGg6IDUwcHg7XG4gICAgaGVpZ2h0OiA1NXB4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGRpdi5kb2pvIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvZG9qby5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIHdpZHRoOiAxMDBweDtcbiAgICBoZWlnaHQ6IDkwcHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LmhvdXNlIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvaG91c2UucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogMTAwcHg7XG4gICAgaGVpZ2h0OiAxMDBweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuc3RhcmJ1Y2tzIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvc3RhcmJ1Y2tzLmpwZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgd2lkdGg6IDEyMHB4O1xuICAgIGhlaWdodDogMTA1cHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LnNwYSB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL3NwYS5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIHdpZHRoOiA1MHB4O1xuICAgIGhlaWdodDogNTBweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuZm91bnRhaW4ge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9mb3VudGFpbi5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIHdpZHRoOiA5MHB4O1xuICAgIGhlaWdodDogOTBweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuY2hvY29sYXRlIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvY2hvY29sYXRlLnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgd2lkdGg6IDMwcHg7XG4gICAgaGVpZ2h0OiAzMHB4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGRpdi5tZWF0IHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvbWVhdGJvbmUucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogMzBweDtcbiAgICBoZWlnaHQ6IDMwcHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LmJ1aWxkaW5nIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvb2ZmaWNlYnVpbGRpbmcucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogMTAwcHg7XG4gICAgaGVpZ2h0OiA5MHB4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGRpdi5jb2ZmZWUge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9zdGFyYnVja3Njb2ZmZWUucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogMzBweDtcbiAgICBoZWlnaHQ6IDMwcHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xufVxuXG46aG9zdCA6Om5nLWRlZXAgI2hlYWx0aCB7XG4gICAgYm9yZGVyOiAzcHggc29saWQgZ3JleTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgd2lkdGg6IDUlO1xuICAgIGhlaWdodDogOCU7XG4gICAgY29sb3I6IHJlZDtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LXNpemU6IDI0cHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogODBweDtcbiAgICBtYXJnaW4tbGVmdDogMTI2MHB4O1xufVxuXG46aG9zdCA6Om5nLWRlZXAgI01yRm94IHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvc2hpYmEyLnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgd2lkdGg6IDQ1cHg7XG4gICAgaGVpZ2h0OiA0NXB4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGJ1dHRvbiB7XG4gICAgZm9udC1zaXplOiAyNHB4O1xufVxuXG46aG9zdCA6Om5nLWRlZXAgI0NhdCB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL2NhdC5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIHdpZHRoOiA0NXB4O1xuICAgIGhlaWdodDogNDVweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = ("/* * {\n    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;\n    text-align: center;\n    vertical-align: top;\n    display: inline-block; \n    box-sizing: border-box;\n}    */\n\n/* :host ::ng-deep #container {\n    border: grey;\n    border-radius: 5px;\n    box-sizing: border-box;\n    display: block;\n} */\n\n/* :host ::ng-deep body {\n    border: grey;\n    border-radius: 5px;\n    background-color: grey;\n    margin: 0px;\n} */\n\n:host ::ng-deep body {\n    margin: 0px;\n}\n\n:host ::ng-deep .row div {\n    width: 40px;\n    height: 40px;\n    display: inline-block;\n}\n\n:host ::ng-deep .row {\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.brick {\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n}\n\n:host ::ng-deep div.empty {\n    background-color: whitesmoke;\n}\n\n/* :host ::ng-deep div.buttons {\n    background-color: white;\n    display: inline-block;\n    margin-left: 1200px;\n    margin-top: -300px;\n} */\n\n:host ::ng-deep div.tree {\n    background-image: url('tree.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n}\n\n:host ::ng-deep div.dojo {\n    background-image: url('dojo.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    width: 100px;\n    height: 100px;\n    position: absolute;\n}\n\n:host ::ng-deep div.house {\n    background-image: url('house.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 100px;\n    height: 100px;\n    position: absolute;\n}\n\n:host ::ng-deep div.starbucks {\n    background-image: url('starbucks.jpg');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 100px;\n    height: 100px;\n    position: absolute;\n}\n\n:host ::ng-deep div.spa {\n    background-image: url('spa.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n}\n\n:host ::ng-deep div.fountain {\n    background-image: url('fountain.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.chocolate {\n    background-image: url('chocolate.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.meat {\n    background-image: url('meatbone.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep div.building {\n    background-image: url('officebuilding.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 100px;\n    height: 100px;\n    position: absolute;\n}\n\n:host ::ng-deep div.coffee {\n    background-image: url('coffeecup.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    background-color: grey;\n    outline: 1px solid rgb(208, 220, 231);\n    width: 40px;\n    height: 40px;\n    \n}\n\n:host ::ng-deep #health {\n    border: 3px solid grey;\n    border-radius: 5px;\n    width: 5%;\n    height: 8%;\n    color: red;\n    padding: 10px;\n    text-align: center;\n    font-size: 24px;\n    position: absolute;\n    top: 80px;\n    margin-left: 1400px;\n}\n\n:host ::ng-deep #MrFox {\n    background-image: url('shiba2.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 40px;\n    height: 40px;\n    position: absolute;\n}\n\n:host ::ng-deep button {\n    font-size: 24px;\n}\n\n:host ::ng-deep #cat {\n    background-image: url('cat.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    width: 40px;\n    height: 40px;\n    position: absolute;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZ3JpZC9ncmlkLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7OztNQU1NOztBQUVOOzs7OztHQUtHOztBQUVIOzs7OztHQUtHOztBQUVIO0lBQ0ksV0FBVztBQUNmOztBQUdBO0lBQ0ksV0FBVztJQUNYLFlBQVk7SUFDWixxQkFBcUI7QUFDekI7O0FBRUE7SUFDSSxZQUFZOztBQUVoQjs7QUFFQTtJQUNJLHNCQUFzQjtJQUN0QixxQ0FBcUM7QUFDekM7O0FBRUE7SUFDSSw0QkFBNEI7QUFDaEM7O0FBRUE7Ozs7O0dBS0c7O0FBRUg7SUFDSSxpQ0FBcUQ7SUFDckQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsc0JBQXNCO0lBQ3RCLHFDQUFxQztJQUNyQyxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLGlDQUFxRDtJQUNyRCw0QkFBNEI7SUFDNUIsMkJBQTJCO0lBQzNCLHNCQUFzQjtJQUN0QixzQkFBc0I7SUFDdEIsWUFBWTtJQUNaLGFBQWE7SUFDYixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxrQ0FBc0Q7SUFDdEQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsc0JBQXNCO0lBQ3RCLHFDQUFxQztJQUNyQyxZQUFZO0lBQ1osYUFBYTtJQUNiLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLHNDQUEwRDtJQUMxRCw0QkFBNEI7SUFDNUIsMkJBQTJCO0lBQzNCLHNCQUFzQjtJQUN0QixzQkFBc0I7SUFDdEIscUNBQXFDO0lBQ3JDLFlBQVk7SUFDWixhQUFhO0lBQ2Isa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksZ0NBQW9EO0lBQ3BELDRCQUE0QjtJQUM1QiwyQkFBMkI7SUFDM0Isc0JBQXNCO0lBQ3RCLHNCQUFzQjtJQUN0QixxQ0FBcUM7SUFDckMsV0FBVztJQUNYLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxxQ0FBeUQ7SUFDekQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsc0JBQXNCO0lBQ3RCLHFDQUFxQztJQUNyQyxXQUFXO0lBQ1gsWUFBWTs7QUFFaEI7O0FBRUE7SUFDSSxzQ0FBMEQ7SUFDMUQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsc0JBQXNCO0lBQ3RCLHFDQUFxQztJQUNyQyxXQUFXO0lBQ1gsWUFBWTs7QUFFaEI7O0FBRUE7SUFDSSxxQ0FBeUQ7SUFDekQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsc0JBQXNCO0lBQ3RCLHFDQUFxQztJQUNyQyxXQUFXO0lBQ1gsWUFBWTs7QUFFaEI7O0FBRUE7SUFDSSwyQ0FBK0Q7SUFDL0QsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsc0JBQXNCO0lBQ3RCLHFDQUFxQztJQUNyQyxZQUFZO0lBQ1osYUFBYTtJQUNiLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLHNDQUEwRDtJQUMxRCw0QkFBNEI7SUFDNUIsMkJBQTJCO0lBQzNCLHNCQUFzQjtJQUN0QixzQkFBc0I7SUFDdEIscUNBQXFDO0lBQ3JDLFdBQVc7SUFDWCxZQUFZOztBQUVoQjs7QUFFQTtJQUNJLHNCQUFzQjtJQUN0QixrQkFBa0I7SUFDbEIsU0FBUztJQUNULFVBQVU7SUFDVixVQUFVO0lBQ1YsYUFBYTtJQUNiLGtCQUFrQjtJQUNsQixlQUFlO0lBQ2Ysa0JBQWtCO0lBQ2xCLFNBQVM7SUFDVCxtQkFBbUI7QUFDdkI7O0FBRUE7SUFDSSxtQ0FBdUQ7SUFDdkQsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsV0FBVztJQUNYLFlBQVk7SUFDWixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxlQUFlO0FBQ25COztBQUVBO0lBQ0ksZ0NBQW9EO0lBQ3BELDRCQUE0QjtJQUM1QiwyQkFBMkI7SUFDM0Isc0JBQXNCO0lBQ3RCLFdBQVc7SUFDWCxZQUFZO0lBQ1osa0JBQWtCO0FBQ3RCIiwiZmlsZSI6InNyYy9hcHAvZ3JpZC9ncmlkLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiAqIHtcbiAgICBmb250LWZhbWlseTogSW1wYWN0LCBIYWV0dGVuc2Nod2VpbGVyLCAnQXJpYWwgTmFycm93IEJvbGQnLCBzYW5zLXNlcmlmO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICB2ZXJ0aWNhbC1hbGlnbjogdG9wO1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jazsgXG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbn0gICAgKi9cblxuLyogOmhvc3QgOjpuZy1kZWVwICNjb250YWluZXIge1xuICAgIGJvcmRlcjogZ3JleTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICBkaXNwbGF5OiBibG9jaztcbn0gKi9cblxuLyogOmhvc3QgOjpuZy1kZWVwIGJvZHkge1xuICAgIGJvcmRlcjogZ3JleTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcbiAgICBtYXJnaW46IDBweDtcbn0gKi9cblxuOmhvc3QgOjpuZy1kZWVwIGJvZHkge1xuICAgIG1hcmdpbjogMHB4O1xufVxuXG5cbjpob3N0IDo6bmctZGVlcCAucm93IGRpdiB7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbn1cblxuOmhvc3QgOjpuZy1kZWVwIC5yb3cge1xuICAgIGhlaWdodDogNDBweDtcbiAgICBcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGRpdi5icmljayB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcbiAgICBvdXRsaW5lOiAxcHggc29saWQgcmdiKDIwOCwgMjIwLCAyMzEpO1xufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LmVtcHR5IHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZXNtb2tlO1xufVxuXG4vKiA6aG9zdCA6Om5nLWRlZXAgZGl2LmJ1dHRvbnMge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBtYXJnaW4tbGVmdDogMTIwMHB4O1xuICAgIG1hcmdpbi10b3A6IC0zMDBweDtcbn0gKi9cblxuOmhvc3QgOjpuZy1kZWVwIGRpdi50cmVlIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvdHJlZS5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgb3V0bGluZTogMXB4IHNvbGlkIHJnYigyMDgsIDIyMCwgMjMxKTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuZG9qbyB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL2Rvam8ucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIHdpZHRoOiAxMDBweDtcbiAgICBoZWlnaHQ6IDEwMHB4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGRpdi5ob3VzZSB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL2hvdXNlLnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcbiAgICBvdXRsaW5lOiAxcHggc29saWQgcmdiKDIwOCwgMjIwLCAyMzEpO1xuICAgIHdpZHRoOiAxMDBweDtcbiAgICBoZWlnaHQ6IDEwMHB4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGRpdi5zdGFyYnVja3Mge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9zdGFyYnVja3MuanBnJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDEwMHB4O1xuICAgIGhlaWdodDogMTAwcHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LnNwYSB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL3NwYS5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgb3V0bGluZTogMXB4IHNvbGlkIHJnYigyMDgsIDIyMCwgMjMxKTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuZm91bnRhaW4ge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9mb3VudGFpbi5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgb3V0bGluZTogMXB4IHNvbGlkIHJnYigyMDgsIDIyMCwgMjMxKTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgXG59XG5cbjpob3N0IDo6bmctZGVlcCBkaXYuY2hvY29sYXRlIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvY2hvY29sYXRlLnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcbiAgICBvdXRsaW5lOiAxcHggc29saWQgcmdiKDIwOCwgMjIwLCAyMzEpO1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBcbn1cblxuOmhvc3QgOjpuZy1kZWVwIGRpdi5tZWF0IHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvbWVhdGJvbmUucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIFxufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LmJ1aWxkaW5nIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvb2ZmaWNlYnVpbGRpbmcucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmV5O1xuICAgIG91dGxpbmU6IDFweCBzb2xpZCByZ2IoMjA4LCAyMjAsIDIzMSk7XG4gICAgd2lkdGg6IDEwMHB4O1xuICAgIGhlaWdodDogMTAwcHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xufVxuXG46aG9zdCA6Om5nLWRlZXAgZGl2LmNvZmZlZSB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL2NvZmZlZWN1cC5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XG4gICAgb3V0bGluZTogMXB4IHNvbGlkIHJnYigyMDgsIDIyMCwgMjMxKTtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgXG59XG5cbjpob3N0IDo6bmctZGVlcCAjaGVhbHRoIHtcbiAgICBib3JkZXI6IDNweCBzb2xpZCBncmV5O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICB3aWR0aDogNSU7XG4gICAgaGVpZ2h0OiA4JTtcbiAgICBjb2xvcjogcmVkO1xuICAgIHBhZGRpbmc6IDEwcHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGZvbnQtc2l6ZTogMjRweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiA4MHB4O1xuICAgIG1hcmdpbi1sZWZ0OiAxNDAwcHg7XG59XG5cbjpob3N0IDo6bmctZGVlcCAjTXJGb3gge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9zaGliYTIucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xufVxuXG46aG9zdCA6Om5nLWRlZXAgYnV0dG9uIHtcbiAgICBmb250LXNpemU6IDI0cHg7XG59XG5cbjpob3N0IDo6bmctZGVlcCAjY2F0IHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWFnZXMvY2F0LnBuZycpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbn0iXX0= */");
 
 /***/ }),
 
@@ -665,181 +665,229 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GridComponent", function() { return GridComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../http.service */ "./src/app/http.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 
 
-var world = [
-    [5, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-    [1, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 8, 2, 2, 2, 2, 2],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 7, 2, 2, 2, 2, 2, 2],
-    [1, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-    [1, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-    [1, 2, 2, 11, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2],
-    [1, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-    [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-];
-class Character {
-    constructor(name, health = 50, x, y) {
-        this.name = name;
-        this.health = health;
-        this.x = x;
-        this.y = y;
-    }
-    showStats() {
-        console.log(`Name: ${this.name}, Health: ${this.health}`);
-    }
-    sayName() {
-        console.log(`My name is ${this.name}`);
-    }
-    eatTreat() {
-        this.health += 5;
-    }
-    drinksPupaccino() {
-        this.health += 5;
-    }
-    visitSpa() {
-        this.health += 10;
-    }
-    eatChocolate() {
-        this.health -= 5;
-    }
-    seesRainstorm() {
-        this.health -= 10;
-    }
-    seesLake() {
-        this.health -= 5;
-    }
-    seesDogFriend() {
-        this.health += 5;
-    }
-    seesMrNibbles() {
-        this.health += 5;
-    }
-    seesAnne() {
-        this.health += 5;
-    }
-    seesAdrien() {
-        this.health -= 5;
-    }
-    seesRyan() {
-        this.health -= 5;
-    }
-}
-var MrFox = new Character('Mr. Fox', 50, 1, 1);
-function displayMrFox() {
-    document.getElementById('MrFox').style.top = MrFox.y * 85 + "px";
-    document.getElementById('MrFox').style.left = MrFox.x * 85 + "px";
-    return MrFox;
-}
-var Cat = 'Cat';
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// var world = [
+//   [5, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2],
+//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+//   [1, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 8, 2, 2, 2, 2, 2],
+//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 7, 2, 2, 2, 2, 2, 2],
+//   [1, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+//   [1, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2],
+//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+//   [1, 2, 2, 11, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2],
+//   [1, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+//   [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+// ];
+// class Character {
+//   name: string;
+//   health: number;
+//   x: number;
+//   y: number;
+//   constructor(name, health = 50, x, y) {
+//     this.name = name;
+//     this.health = health;
+//     this.x = x;
+//     this.y = y;
+//   }
+//   showStats() {
+//     console.log(`Name: ${this.name}, Health: ${this.health}`);
+//   }
+//   sayName() {
+//     console.log(`My name is ${this.name}`)
+//   }
+//   eatTreat() {
+//     this.health += 5;
+//   }
+//   drinksPupaccino() {
+//     this.health += 5;
+//   }
+//   visitSpa() {
+//     this.health += 10;
+//   }
+//   eatChocolate() {
+//     this.health -= 5;
+//   }
+//   seesRainstorm() {
+//     this.health -= 10;
+//   }
+//   seesLake() {
+//     this.health -= 5;
+//   }
+//   seesDogFriend() {
+//     this.health += 5;
+//   }
+//   seesMrNibbles() {
+//     this.health += 5;
+//   }
+//   seesAnne() {
+//     this.health += 5;
+//   }
+//   seesAdrien() {
+//     this.health -= 5;
+//   }
+//   seesRyan() {
+//     this.health -= 5;
+//   }
+// }
+// var MrFox = new Character('Mr. Fox', 50, 1, 1)
+// function displayMrFox() {
+//   document.getElementById('MrFox').style.top = MrFox.y * 30 + "px";
+//   document.getElementById('MrFox').style.left = MrFox.x * 30 + "px";
+//   return MrFox;
+// }
+// var Cat = 'Cat'
+// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 let GridComponent = class GridComponent {
     // moveup: any;
     // movedown: any;
     // moveleft: any;
     // moveright: any;
-    constructor() { }
+    constructor(_httpService, _route, _router) {
+        this._httpService = _httpService;
+        this._route = _route;
+        this._router = _router;
+    }
     ngOnInit() {
-        this.stuff = this.displayWorld();
-        this.MrFox = this.displayMrFox();
-        this.Cat = this.displayCat();
-        this.Spa = {
-            x: 12,
-            y: 3
+        this.health = 50;
+        this.cat = {
+            x: 14,
+            y: 1
         };
-    }
-    displayMrFox() {
-        document.getElementById('MrFox').style.top = MrFox.y * 85 + "px";
-        document.getElementById('MrFox').style.left = MrFox.x * 85 + "px";
-        return MrFox;
-    }
-    displayCat() {
-        document.getElementById('Cat').style.top = Cat.y * 90 + "px";
-        document.getElementById('Cat').style.left = Cat.x * 90 + "px";
-        return Cat;
+        this.MrFox = {
+            x: 1,
+            y: 1
+        };
+        this.world = [
+            [5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 1],
+            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+            [1, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 12, 12, 12, 12, 12, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 8, 2, 2, 2, 1],
+            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 7, 2, 2, 2, 1],
+            [1, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 1],
+            [1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+            [1, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 1],
+            [1, 2, 2, 11, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 1],
+            [1, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 1],
+            [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,],
+        ];
+        this.displayWorld();
+        this.displayMrFox();
+        this.displayCat();
+        this.displayHealth();
     }
     displayWorld() {
-        var output = '';
-        for (var i = 0; i < world.length; i++) {
-            output += "<div class='row'>";
-            for (var j = 0; j < world[i].length; j++) {
-                if (world[i][j] == 2)
+        var output = "";
+        for (var i = 0; i < this.world.length; i++) {
+            output += "<div class= 'row'>";
+            for (var j = 0; j < this.world[i].length; j++) {
+                if (this.world[i][j] == 2)
                     output += "<div class='brick'></div>";
-                else if (world[i][j] == 1)
+                else if (this.world[i][j] == 1)
                     output += "<div class='brick'></div>";
-                if (world[i][j] == 0)
-                    output += "<div class='empty'></div>";
-                if (world[i][j] == 3)
+                if (this.world[i][j] == 3)
                     output += "<div class='tree'></div>";
-                if (world[i][j] == 4)
-                    output += "<div class='dojo'></div>";
-                if (world[i][j] == 5)
+                if (this.world[i][j] == 4)
                     output += "<div class='house'></div>";
-                if (world[i][j] == 6)
-                    output += "<div class='starbucks'></div>";
-                if (world[i][j] == 7)
-                    output += "<div class='spa'></div>";
-                if (world[i][j] == 8)
-                    output += "<div class='fountain'></div>";
-                if (world[i][j] == 9)
-                    output += "<div class='chocolate'></div>";
-                if (world[i][j] == 10)
+                if (this.world[i][j] == 10)
                     output += "<div class='meat'></div>";
-                if (world[i][j] == 11)
+                if (this.world[i][j] == 9)
+                    output += "<div class='chocolate'></div>";
+                if (this.world[i][j] == 6)
+                    output += "<div class='starbucks'></div>";
+                if (this.world[i][j] == 5)
+                    output += "<div class='dojo'></div>";
+                if (this.world[i][j] == 7)
+                    output += "<div class='spa'></div>";
+                if (this.world[i][j] == 8)
+                    output += "<div class='fountain'></div>";
+                if (this.world[i][j] == 11)
                     output += "<div class='building'></div>";
-                if (world[i][j] == 12)
+                if (this.world[i][j] == 12)
                     output += "<div class='coffee'></div>";
             }
             output += "</div>";
         }
-        console.log(output);
-        return output;
+        // console.log(output);
+        document.getElementById('world').innerHTML = output;
     }
-    moveMrFox(direction) {
-        switch (direction) {
-            case 'up':
-                MrFox.y--;
-                if (MrFox.x == this.Spa.x && MrFox.y == this.Spa.y) {
-                    MrFox.health += 10;
-                }
-                break;
-            case 'down':
-                MrFox.y++;
-                if (MrFox.x == this.Spa.x && MrFox.y == this.Spa.y) {
-                    MrFox.health += 10;
-                }
-                break;
-            case 'left':
-                MrFox.x--;
-                if (MrFox.x == this.Spa.x && MrFox.y == this.Spa.y) {
-                    MrFox.health += 10;
-                }
-                break;
-            case 'right':
-                MrFox.x++;
-                if (MrFox.x == this.Spa.x && MrFox.y == this.Spa.y) {
-                    MrFox.health += 10;
-                }
-                break;
-        }
-        this.displayWorld();
-        displayMrFox();
-        console.log(`Mr Fox is at x: ${MrFox.x}, y: ${MrFox.y} `);
+    displayMrFox() {
+        document.getElementById("MrFox").style.top = this.MrFox.y * 40 + "px";
+        document.getElementById("MrFox").style.left = this.MrFox.x * 40 + "px";
+    }
+    displayCat() {
+        document.getElementById("cat").style.top = this.cat.y * 40 + "px";
+        document.getElementById("cat").style.left = this.cat.x * 40 + "px";
     }
     displayHealth() {
-        return MrFox.health;
+        document.getElementById("health").innerHTML = this.health;
+    }
+    onKeydownHandler(event) {
+        if (event.keyCode === 37 && this.world[this.MrFox.y][this.MrFox.x - 1] != 1) {
+            this.MrFox.x--;
+        }
+        else if (event.keyCode == 39 && this.world[this.MrFox.y][this.MrFox.x + 1] != 1) {
+            this.MrFox.x++;
+        }
+        else if (event.keyCode == 38 && this.world[this.MrFox.y - 1][this.MrFox.x] != 1) {
+            this.MrFox.y--;
+        }
+        else if (event.keyCode == 40 && this.world[this.MrFox.y + 1][this.MrFox.x] != 1) {
+            this.MrFox.y++;
+        }
+        if (this.world[this.MrFox.y][this.MrFox.x] === 9) {
+            this.world[this.MrFox.y][this.MrFox.x] = 2;
+            this.health -= 15;
+        }
+        else if (this.world[this.MrFox.y][this.MrFox.x] === 10) {
+            this.world[this.MrFox.y][this.MrFox.x] = 2;
+            this.health += 5;
+        }
+        else if (this.world[this.MrFox.y][this.MrFox.x] === 12) {
+            this.world[this.MrFox.y][this.MrFox.x] = 2;
+            this.health += 10;
+        }
+        else if (this.world[this.MrFox.y][this.MrFox.x] === 7 || this.world[this.MrFox.y][this.MrFox.x] === 8) {
+            this.health += 5;
+        }
+        // if (this.world[this.MrFox.y][this.MrFox.x] == this.world[this.cat.y][this.cat.x]) {
+        //   this.world[this.MrFox.y][this.MrFox.x] = 2 &&
+        //     this.health--;
+        // }
+        this.displayWorld();
+        this.displayMrFox();
+        this.displayHealth();
     }
 };
+GridComponent.ctorParameters = () => [
+    { type: _http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"])('document:keydown', ['$event'])
+], GridComponent.prototype, "onKeydownHandler", null);
 GridComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-grid',
@@ -1441,7 +1489,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/nadiaouzounova/coding_dojo/git_hub/adventures_mr_fox-1/public/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/lynneasmoyer/Documents/GitHub/adventures_mr_fox/public/src/main.ts */"./src/main.ts");
 
 
 /***/ })

@@ -1,6 +1,8 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { HttpService } from '../http.service';
 import { ActivatedRoute, Params, Router } from '@angular/router';
+import { hostViewClassName } from '@angular/compiler';
+import {Howl} from 'howler';
 
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -31,6 +33,8 @@ export class GridComponent implements OnInit {
   story12: Boolean;
   story13: Boolean;
   game: Boolean;
+  // sound = new Howl({
+  //   src: ["../../../assets/soundtrack.mp3"]});
 
 
   constructor(
@@ -38,8 +42,9 @@ export class GridComponent implements OnInit {
     private _route: ActivatedRoute,
     private _router: Router
   ) { }
-
+  
   ngOnInit() {
+    // this.sound.play();
     this.health = 50;
     this.cat = {
       x: 12,
@@ -51,8 +56,8 @@ export class GridComponent implements OnInit {
     };
     this.world = [
     [5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
-    [3, 1, 1, 2, 2, 2, 2, 2, 18, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 11, 11, 3],
-    [3, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 16, 2, 12, 12, 12, 12, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 11, 3],
+    [3, 1, 2, 2, 2, 2, 2, 2, 18, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 11, 11, 3],
+    [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 16, 2, 12, 12, 12, 12, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 2, 2, 11, 3],
     [3, 2, 2, 13, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3],
     [3, 2, 2, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 9, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 21, 2, 2, 2, 3, 2, 2, 3],
     [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 15, 2, 2, 2, 2, 2, 2, 8, 3, 3, 2, 3],
@@ -88,7 +93,7 @@ export class GridComponent implements OnInit {
   this.story12 = false;
   this.story13 = false;
   this.game = false;
-  
+  // this.playSoundtrack();
 }
 
 displayWorld() {
@@ -160,7 +165,7 @@ displayHealth() {
 }
 
 moveCat() {
-    this.cat.x = this.cat.x - 2;
+    this.cat.x = this.cat.x - 4;
 }
 
 closeStory(){
@@ -179,6 +184,36 @@ closeStory(){
   this.story13 = null;
   this.game = null;
 }
+
+shibaSneeze(){
+  this.MrFox.x += 5;
+  let audio = new Audio();
+  audio.src = "../../../assets/sneeze.mp3";
+  audio.load();
+  audio.play();
+  this.displayWorld();
+  this.displayMrFox();
+
+}
+
+shibaBark(){
+  this.MrFox.y -= 1;
+  this.displayWorld();
+  this.displayMrFox();
+  let audio = new Audio();
+  audio.src = "../../../assets/bark.mp3";
+  audio.load();
+  audio.play();
+}
+
+// playSoundtrack(){
+//   let audio = new Audio();
+//   audio.src = "../../../assets/soundtrack.mp3";
+//   audio.load();
+//   audio.play()
+// } 
+
+
 
 
 @HostListener('document:keydown', ['$event']) 
@@ -209,7 +244,8 @@ onKeydownHandler(event: KeyboardEvent) {
   }
   else if (this.world[this.MrFox.y][this.MrFox.x] === 10) {
     this.world[this.MrFox.y][this.MrFox.x] = 2;
-    this.health += 5;
+    if(this.health < 100){
+      this.health += 5};
     let audio = new Audio();
     audio.src = "../../../assets/sonic.mp3";
     audio.load();
@@ -218,7 +254,8 @@ onKeydownHandler(event: KeyboardEvent) {
   }
   else if (this.world[this.MrFox.y][this.MrFox.x] === 12) {
     this.world[this.MrFox.y][this.MrFox.x] = 2;
-    this.health += 10;
+    if(this.health < 100){
+      this.health += 10};
     let audio = new Audio();
     audio.src = "../../../assets/mario_coin.mp3";
     audio.load();
@@ -226,7 +263,7 @@ onKeydownHandler(event: KeyboardEvent) {
 
   }
 
-  else if (this.world[this.MrFox.y][this.MrFox.x] == this.world[this.cat.y][this.cat.x]) {
+  else if (this.world[this.MrFox.y][this.MrFox.x] === this.world[this.cat.y][this.cat.x]) {
     this.world[this.MrFox.y][this.MrFox.x] = 2;
       this.health -= 10;
   }
@@ -236,11 +273,13 @@ onKeydownHandler(event: KeyboardEvent) {
   }
   else if (this.world[this.MrFox.y][this.MrFox.x] === 16) {
     this.story2 = true;
-    this.health += 5;
+    if(this.health < 100){
+      this.health += 5};
   }
   else if (this.world[this.MrFox.y][this.MrFox.x] === 17) {
     this.story3 = true;
-    this.health += 5;
+    if(this.health < 100){
+      this.health += 5};
     let audio = new Audio();
     audio.src = "../../../assets/adrien_sound.mp3";
     audio.load();
@@ -252,7 +291,8 @@ onKeydownHandler(event: KeyboardEvent) {
   }
 
   else if (this.world[this.MrFox.y][this.MrFox.x] === 7 || this.world[this.MrFox.y][this.MrFox.x] === 8) {
-    this.health += 10;
+    if(this.health < 100){
+      this.health += 10};
     this.story5 = true;
   }
   else if (this.world[this.MrFox.y][this.MrFox.x] === 13) {
@@ -318,6 +358,6 @@ onKeydownHandler(event: KeyboardEvent) {
   this.displayHealth();
   this.displayCat();
   this.moveCat();
-
   } 
+
 }

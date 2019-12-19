@@ -285,6 +285,27 @@
     top: 80px;
     margin-left: 1350px;
 }
+:host ::ng-deep #shibaSneeze {
+    width: 5%;
+    height: 8%;
+    padding: 8px;
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    top: 250px;
+    margin-left: 1340px;
+}
+
+:host ::ng-deep #shibaBark {
+    width: 5%;
+    height: 8%;
+    padding: 8px;
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    top: 350px;
+    margin-left: 1340px;
+}
 
 :host ::ng-deep #MrFox {
     background-image: url('../../assets/images/shiba2.png');

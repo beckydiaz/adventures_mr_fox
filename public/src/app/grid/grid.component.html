@@ -28,6 +28,12 @@
         <div id='MrFox'></div>
         <div id='cat'></div>
         <div id='health' innerHTML='this.health'>Health:</div> 
+        <div id='shibaSneeze'>
+            <button (click)='shibaSneeze()'>Shiba Sneeze</button>
+        </div>
+        <div id='shibaBark'>
+                <button (click)='shibaBark()'>Shiba Bark</button>
+            </div>
     </div> 
     <div class="popup">
             <button *ngIf='story1' (click)="closeStory()">X</button>
@@ -74,7 +80,7 @@
             <app-story11 *ngIf='story11'></app-story11>
     </div>
     <div class="popup">
-            <button *ngIf='story12' (click)="closeStory()">X</button>
+            <button *ngIf='story12' (click)="ngOnInit()">X</button>
             <app-story12 *ngIf='story12'></app-story12>
     </div>
     <div class="popup">

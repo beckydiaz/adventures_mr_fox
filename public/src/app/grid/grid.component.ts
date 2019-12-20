@@ -2,7 +2,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { HttpService } from '../http.service';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { hostViewClassName } from '@angular/compiler';
-import {Howl} from 'howler';
+// import {Howl} from 'howler';
 
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -165,7 +165,7 @@ displayHealth() {
 }
 
 moveCat() {
-    this.cat.x = this.cat.x - 4;
+    this.cat.x = this.cat.x - 2;
 }
 
 closeStory(){
